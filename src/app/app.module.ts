@@ -5,12 +5,18 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { MenuComponent } from './menu/menu.component';
+import { BannerImageComponent } from './components/banner-image/banner-image.component';
+import { PageHeaderComponent } from './components/page-header/page-header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    MenuComponent,
+    BannerImageComponent,
+    PageHeaderComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'my-app' }),
