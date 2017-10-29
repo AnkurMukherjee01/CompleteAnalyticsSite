@@ -1,0 +1,29 @@
+@import '~scss/variables.scss';
+
+:host{
+    color: $color-dark;
+}
+
+.card{
+    width: 25rem;
+    margin: 20px;
+}
+.card-title{
+    height: 40px;
+}
+
+.detailsRow{
+    display: flex;
+    justify-content: space-between;
+}
+.joinBtn{
+    width: 100%;
+}
+
+.rating{
+    display: flex;
+    flex-direction: column;
+    svg{
+        font-size: 0.5em;
+    }
+}

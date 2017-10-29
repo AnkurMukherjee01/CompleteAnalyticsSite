@@ -1,0 +1,21 @@
+<div class="card">
+  <div class="card-block">
+    <h4 class="card-title">{{course.name}}</h4>
+  </div>
+
+      <img class="card-img-top" src="http://via.placeholder.com/200X100" alt="Card image cap">
+    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+  <div class="card-block">
+    <div class="detailsRow">
+      <h5 class="hours">{{course.duration}} Hours</h5>
+      <h5 class="price"><b>{{course.price | currency:'INR':true:'4.0-0'}}</b></h5>
+    </div>
+    <div class="rating">
+      Rating( 3.5/ 5)
+      <!-- <star-rating-comp [starType]="'svg'" [rating]="2.63" [size]="'small'" [space]="'around'" [direction]="'ltr'" [readOnly]="true" [numOfStars]="5"></star-rating-comp> -->
+    </div>
+  </div>
+  <div class="card-footer">
+    <button class="joinBtn btn btn-primary">Join</button>
+  </div>
+</div>

@@ -1,0 +1,64 @@
+{
+    "courses": [{
+        "id" : 1,
+        "name" : "Data  science-Predictive Modeling with R",
+        "duration" : 80,
+        "price" : 22000
+    },{
+        "id" : 2,
+        "name" : "SAS base and advance for Data science",
+        "duration" : 60,
+        "price" : 10000
+    },{
+        "id" : 3,
+        "name" : "Python for Data Science",
+        "duration" : 40,
+        "price" : 10000
+    },{
+        "id" : 4,
+        "name" : "R for Data Science",
+        "duration" : 30,
+        "price" : 10000
+    },{
+        "id" : 5,
+        "name" : "Machine learning by using R",
+        "duration" : 40,
+        "price" : 20000
+    },{
+        "id" : 6,
+        "name" : "Data visilization by using Tableau",
+        "duration" : 40,
+        "price" : 10000
+    },{
+        "id" : 7,
+        "name" : "Advance Excel for Data analytics",
+        "duration" : 18,
+        "price" : 4500
+    },{
+        "id" : 8,
+        "name" : "Excel VBA (MACRO)",
+        "duration" : 24,
+        "price" : 6500
+    }],
+    "popularCourses": [{
+        "id" : 1,
+        "name" : "Data  science-Predictive Modeling with R",
+        "duration" : 80,
+        "price" : 22000
+    },{
+        "id" : 2,
+        "name" : "SAS base and advance for Data science",
+        "duration" : 60,
+        "price" : 10000
+    },{
+        "id" : 3,
+        "name" : "Python for Data Science",
+        "duration" : 40,
+        "price" : 10000
+    },{
+        "id" : 4,
+        "name" : "R for Data Science",
+        "duration" : 30,
+        "price" : 10000
+    }]
+}

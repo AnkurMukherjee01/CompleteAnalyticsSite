@@ -1,0 +1,4 @@
+<page-header [text]="title"></page-header>
+<div class="container-fluid courseList">
+  <course-tile *ngFor="let tile of courses" [course]="tile"></course-tile>
+</div>
