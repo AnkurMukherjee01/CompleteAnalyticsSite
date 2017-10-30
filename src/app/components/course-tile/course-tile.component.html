@@ -11,8 +11,7 @@
       <h5 class="price"><b>{{course.price | currency:'INR':true:'4.0-0'}}</b></h5>
     </div>
     <div class="rating">
-      Rating( 3.5/ 5)
-      <!-- <star-rating-comp [starType]="'svg'" [rating]="2.63" [size]="'small'" [space]="'around'" [direction]="'ltr'" [readOnly]="true" [numOfStars]="5"></star-rating-comp> -->
+      <star-rating rating="3" maxRating="5" maxStars="5"></star-rating>
     </div>
   </div>
   <div class="card-footer">

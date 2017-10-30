@@ -1,0 +1,11 @@
+.rating{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.star i.glyphicon{
+    font-size: large;
+    color: goldenrod
+}

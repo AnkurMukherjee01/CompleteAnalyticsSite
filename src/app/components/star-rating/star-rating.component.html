@@ -1,0 +1,9 @@
+<div class="rating">
+  <div class="star" *ngFor="let index of [1,2,3,4,5]">
+    <span class="sr-only">({{ index < rating ? '*' : ' ' }})</span>
+    <i class="glyphicon" [ngClass]="index <= rating ? 'glyphicon-star' : 'glyphicon-star-empty'"></i>
+  </div>
+  <div>
+    <span>Rating ({{rating}}/{{maxRating}})</span>
+  </div>
+</div>

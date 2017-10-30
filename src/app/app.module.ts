@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HttpModule } from '@angular/http';
-import { StarRatingModule } from 'angular-star-rating';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -12,6 +11,7 @@ import { BannerImageComponent } from './components/banner-image/banner-image.com
 import { PageHeaderComponent } from './components/page-header/page-header.component';
 import { CourseListComponent } from './components/course-list/course-list.component';
 import { CourseTileComponent } from './components/course-tile/course-tile.component';
+import { StarRatingComponent } from './components/star-rating/star-rating.component';
 import { CourseServiceService } from './services/course-service.service';
 
 @NgModule({
@@ -23,7 +23,8 @@ import { CourseServiceService } from './services/course-service.service';
     BannerImageComponent,
     PageHeaderComponent,
     CourseListComponent,
-    CourseTileComponent
+    CourseTileComponent,
+    StarRatingComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'my-app' }),
@@ -33,7 +34,6 @@ import { CourseServiceService } from './services/course-service.service';
       { path: '**', redirectTo: '' }
     ]),
     HttpModule,
-    StarRatingModule.forRoot()
   ],
   exports: [RouterModule],
   providers: [CourseServiceService],
