@@ -1,0 +1,11 @@
+@import '~scss/variables.scss';
+
+.contactPage{
+    background-color: $color-primary;
+    color: $color-light;
+    padding: 15px;
+}
+
+form{
+    width: 50%;
+}

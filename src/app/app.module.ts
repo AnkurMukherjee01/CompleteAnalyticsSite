@@ -13,6 +13,7 @@ import { CourseListComponent } from './components/course-list/course-list.compon
 import { CourseTileComponent } from './components/course-tile/course-tile.component';
 import { StarRatingComponent } from './components/star-rating/star-rating.component';
 import { CourseServiceService } from './services/course-service.service';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -25,11 +26,13 @@ import { CourseServiceService } from './services/course-service.service';
     CourseListComponent,
     CourseTileComponent,
     StarRatingComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'my-app' }),
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: 'contact', component: ContactComponent, pathMatch: 'full'},
       { path: 'about', component: AboutComponent, pathMatch: 'full' },
       { path: '**', redirectTo: '' }
     ]),
