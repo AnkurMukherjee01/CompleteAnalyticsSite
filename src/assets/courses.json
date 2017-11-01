@@ -40,6 +40,8 @@
         "duration" : 24,
         "price" : 6500
     }],
+
+    
     "popularCourses": [{
         "id" : 1,
         "name" : "Data  science-Predictive Modeling with R",

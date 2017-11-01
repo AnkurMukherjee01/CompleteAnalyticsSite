@@ -1,11 +1,10 @@
 @import "../../scss/variables";
 
-:host {
-  color: $color-attention;
+.homepage{
+  margin-top: 50px;
 }
-
 .courselist{
-  background: linear-gradient(0deg, $color-background,$color-primary) no-repeat;
+  background: linear-gradient(0deg, $color-attention,$color-primary) no-repeat;
 }
 
 .whatwedid{

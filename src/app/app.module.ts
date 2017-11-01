@@ -16,6 +16,8 @@ import { WhatwedidComponent } from './components/whatwedid/whatwedid.component';
 import { TestimonyComponent } from './components/testimony/testimony.component';
 import { CourseServiceService } from './services/course-service.service';
 import { ContactComponent } from './contact/contact.component';
+import { CoursesPageComponent } from './courses-page/courses-page.component';
+import { CourseDetailPageComponent } from './course-detail-page/course-detail-page.component';
 
 @NgModule({
   declarations: [
@@ -31,11 +33,15 @@ import { ContactComponent } from './contact/contact.component';
     ContactComponent,
     WhatwedidComponent,
     TestimonyComponent,
+    CoursesPageComponent,
+    CourseDetailPageComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'my-app' }),
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: 'courses', component: CoursesPageComponent, pathMatch: 'full' },
+      { path: 'courses/:id', component: CourseDetailPageComponent, pathMatch: 'full' },
       { path: 'contact', component: ContactComponent, pathMatch: 'full'},
       { path: 'about', component: AboutComponent, pathMatch: 'full' },
       { path: '**', redirectTo: '' }

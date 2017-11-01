@@ -1,5 +1,5 @@
 {
-  "name": "cli-universal-demo",
+  "name": "completeanalytics-website",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -29,6 +29,7 @@
     "bootstrap": "^3.3.7",
     "core-js": "^2.5.0",
     "express": "^4.15.4",
+    "nodemailer": "^4.3.1",
     "rxjs": "^5.4.3",
     "zone.js": "^0.8.16"
   },

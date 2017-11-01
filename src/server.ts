@@ -5,6 +5,7 @@ import { enableProdMode } from '@angular/core'
 import * as express from 'express';
 import { join } from 'path';
 import { readFileSync } from 'fs';
+var nodemailer = require('nodemailer')
 
 enableProdMode();
 
@@ -25,6 +26,11 @@ app.engine('html', (_, options, callback) => {
 
 app.set('view engine', 'html');
 app.set('views', 'src')
+
+app.get('api/message', (req, res) => {
+    console.log(req.params.name)
+    res.send('{"id": 1,"name":"Matt","band":"BBQ Brawlers"}');
+});
 
 app.get('*.*', express.static(join(DIST_FOLDER, 'browser')));
 

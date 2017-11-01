@@ -3,7 +3,13 @@
 .navbar{
     border-radius: 0px;
     margin-bottom: 0px;
-    background-color: $color-primary; 
+    background-color: $color-dark; 
+    color: $color-light;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 15;
 }
 .navbar-collapse.collapse{
     padding-left: 0px;

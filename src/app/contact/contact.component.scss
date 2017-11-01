@@ -2,8 +2,9 @@
 
 .contactPage{
     background-color: $color-primary;
-    color: $color-light;
+    color: $color-dark;
     padding: 15px;
+    margin-top: 50px;
 }
 
 .contactContainer{
@@ -20,10 +21,10 @@
 }
 
 .highlight{
-    color: $color-attention;
+    color: $color-dark;
 
     a{
-        color: $color-attention;
+        color: $color-dark;
         text-decoration: underline; 
     }
 }
