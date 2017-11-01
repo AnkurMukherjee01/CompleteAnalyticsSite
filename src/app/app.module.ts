@@ -12,6 +12,8 @@ import { PageHeaderComponent } from './components/page-header/page-header.compon
 import { CourseListComponent } from './components/course-list/course-list.component';
 import { CourseTileComponent } from './components/course-tile/course-tile.component';
 import { StarRatingComponent } from './components/star-rating/star-rating.component';
+import { WhatwedidComponent } from './components/whatwedid/whatwedid.component';
+import { TestimonyComponent } from './components/testimony/testimony.component';
 import { CourseServiceService } from './services/course-service.service';
 import { ContactComponent } from './contact/contact.component';
 
@@ -27,6 +29,8 @@ import { ContactComponent } from './contact/contact.component';
     CourseTileComponent,
     StarRatingComponent,
     ContactComponent,
+    WhatwedidComponent,
+    TestimonyComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'my-app' }),

@@ -1,0 +1,21 @@
+@import '~scss/variables.scss';
+:host{
+    color: $color-dark;
+}
+.rowContainer{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 20px;
+}
+
+.card{
+    flex: 1 1;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+.card:hover{
+    transform: scale(1.1);
+    z-index: 5;
+}

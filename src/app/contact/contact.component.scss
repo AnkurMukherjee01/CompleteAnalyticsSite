@@ -6,6 +6,35 @@
     padding: 15px;
 }
 
-form{
-    width: 50%;
+.contactContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.contactForm{
+    flex: 1 1;
+}
+.gmaps{
+    width: 100%;
+    padding: 30px;
+}
+
+.highlight{
+    color: $color-attention;
+
+    a{
+        color: $color-attention;
+        text-decoration: underline; 
+    }
+}
+.address{
+    padding: 20px;
+    align-self: center;
+    flex: 1 1;
+    padding-left: 30px;
+}
+
+.address span{
+    font-size: 1.5em;
+    text-align: center;
 }
