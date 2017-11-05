@@ -1,5 +1,4 @@
-@import "../scss/variables";
-
-h1 {
-  color: $color-primary;
+:host /deep/{
+    font-family: open-sans;
+    font-weight: bold;
 }

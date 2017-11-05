@@ -1,0 +1,47 @@
+@import '~scss/variables.scss';
+.courseDetailPage{
+    margin-top: 50px;
+}
+.allContent{
+  display: flex;
+}
+
+.content{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+tabs{
+    min-height: 0px;
+}
+
+.followContent{
+    width: 20%;
+    background-color: $color-darkbg;
+    color: $color-light;
+    position: fixed;
+    right: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.courseDetails{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-direction: column;
+}
+.courseDetails table tr{
+    border-bottom: 1px solid gray;
+}
+.courseDetails table tr td{
+    padding: 10px;
+}
+.joinBtn{
+    width: 100%;
+
+}

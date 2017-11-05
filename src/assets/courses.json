@@ -3,41 +3,73 @@
         "id" : 1,
         "name" : "Data  science-Predictive Modeling with R",
         "duration" : 80,
+        "classes": 10,
+        "tools" : "R",
+        "img": "assets/images/r_logo.png", 
+        "learning_mode": "Live Training",
         "price" : 22000
     },{
         "id" : 2,
         "name" : "SAS base and advance for Data science",
         "duration" : 60,
+        "classes": 10,
+        "tools" : "SAS",
+        "img": "assets/images/sas_logo.png",
+        "learning_mode": "Live Training",
         "price" : 10000
     },{
         "id" : 3,
         "name" : "Python for Data Science",
         "duration" : 40,
+        "classes": 10,
+        "tools" : "Python",
+        "img": "assets/images/python_logo.png",
+        "learning_mode": "Live Training",
         "price" : 10000
     },{
         "id" : 4,
         "name" : "R for Data Science",
         "duration" : 30,
+        "classes": 10,
+        "tools" : "R",
+        "img": "assets/images/r_logo.png",
+        "learning_mode": "Live Training",
         "price" : 10000
     },{
         "id" : 5,
         "name" : "Machine learning by using R",
         "duration" : 40,
+        "classes": 10,
+        "tools" : "R",
+        "img": "assets/images/r_logo.png",
+        "learning_mode": "Live Training",
         "price" : 20000
     },{
         "id" : 6,
         "name" : "Data visilization by using Tableau",
         "duration" : 40,
+        "classes": 10,
+        "tools" : "Tableau",
+        "img": "assets/images/tableau_logo.png",
+        "learning_mode": "Live Training",
         "price" : 10000
     },{
         "id" : 7,
         "name" : "Advance Excel for Data analytics",
         "duration" : 18,
+        "classes": 10,
+        "tools" : "Excel",
+        "img": "assets/images/excel_logo.png",
+        "learning_mode": "Live Training",
         "price" : 4500
     },{
         "id" : 8,
         "name" : "Excel VBA (MACRO)",
         "duration" : 24,
+        "classes": 10,
+        "tools" : "Excel",
+        "img": "assets/images/excel_logo.png",
+        "learning_mode": "Live Training",
         "price" : 6500
     }],
 
@@ -46,21 +78,37 @@
         "id" : 1,
         "name" : "Data  science-Predictive Modeling with R",
         "duration" : 80,
+        "classes": 10,
+        "tools" : "R",
+        "img": "assets/images/r_logo.png", 
+        "learning_mode": "Live Training",
         "price" : 22000
     },{
         "id" : 2,
         "name" : "SAS base and advance for Data science",
         "duration" : 60,
+        "classes": 10,
+        "tools" : "SAS",
+        "img": "assets/images/sas_logo.png",
+        "learning_mode": "Live Training",
         "price" : 10000
     },{
         "id" : 3,
         "name" : "Python for Data Science",
         "duration" : 40,
+        "classes": 10,
+        "tools" : "Python",
+        "img": "assets/images/python_logo.png",
+        "learning_mode": "Live Training",
         "price" : 10000
     },{
         "id" : 4,
         "name" : "R for Data Science",
         "duration" : 30,
+        "classes": 10,
+        "tools" : "R",
+        "img": "assets/images/r_logo.png",
+        "learning_mode": "Live Training",
         "price" : 10000
     }]
 }

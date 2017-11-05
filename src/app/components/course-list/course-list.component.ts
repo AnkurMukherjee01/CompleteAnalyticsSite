@@ -12,6 +12,8 @@ export class CourseListComponent implements OnInit {
 
   @Input() title;
   @Input() courses;
+  @Input() filterBox;
+  public searchbox = "";
   constructor() { }
 
   ngOnInit() {

@@ -16,6 +16,9 @@
     font-size: 1.2em;
 }
 .card:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
     z-index: 5;
+    background-color: $color-lightbg;
 }

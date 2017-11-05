@@ -1,3 +1,37 @@
-<p>
-  course-detail-page works!
-</p>
+<div class="courseDetailPage">
+  <div class="container allContent">
+    <div class="content">
+        <banner-image src="assets/images/courses.jpg" height="400"></banner-image>
+        <tabs>
+          <tab tabTitle="Course Outline">
+            I am the foo content
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+          </tab>
+          <tab tabTitle="Case Study">
+            I am the bar content
+          </tab>
+          <tab tabTitle="Benefits">
+            I am the bar content
+          </tab>
+          <tab tabTitle="Download">
+            I am the bar content
+          </tab>
+        </tabs>     
+    </div>
+    <div class="followContent" *ngIf="course">
+      <div class="courseDetails">
+        <span><b>Course Details</b></span>
+
+        <table>
+          <tr><td>Course Duration</td><td>{{course.duration}} Hours</td></tr>
+          <tr><td>Course Classes</td><td>{{course.classes}} Weeks</td></tr>
+          <tr><td>Tools</td><td>{{course.tools}}</td></tr>
+          <tr><td>Learning Mode</td><td>{{course.learning_mode}}</td></tr>
+
+        </table>
+        <br/><br/>
+        <button class="btn btn-primary btnJoin">Join</button>
+      </div>
+    </div>
+  </div>
+</div>

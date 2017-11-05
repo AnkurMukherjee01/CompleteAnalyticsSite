@@ -1,3 +1,4 @@
+import { ContactService } from './../services/contact.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  constructor(private contactService: ContactService) { }
 
   ngOnInit() {
+    
+  }
+
+  onSubmit(form){
+    this.contactService.postMessageData(form.value).subscribe((res) => {
+      if(res.status == 200){
+        form.reset();
+      }
+    }, (err) => {
+      
+    })
   }
 
 }

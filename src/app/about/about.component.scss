@@ -1,7 +1,6 @@
 @import "../../scss/variables";
 
 :host{
-  color: $color-light;
   font-size: 1.2em;
 }
 
@@ -9,7 +8,7 @@
 .aboutusContainer{
   display: flex;
   flex-direction: column;
-  background-color: $color-primary;
+  background-color: $color-gray;
   color: $color-dark;
   margin-top: 50px;
 }

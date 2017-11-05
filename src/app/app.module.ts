@@ -1,7 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpModule } from '@angular/http';
+import { TabModule } from 'angular-tabs-component'
+import { RecaptchaModule } from 'ng-recaptcha'
+import { RecaptchaFormsModule } from 'ng-recaptcha/forms';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -18,6 +22,8 @@ import { CourseServiceService } from './services/course-service.service';
 import { ContactComponent } from './contact/contact.component';
 import { CoursesPageComponent } from './courses-page/courses-page.component';
 import { CourseDetailPageComponent } from './course-detail-page/course-detail-page.component';
+import { ContactService } from './services/contact.service';
+import { FilterPipe } from './components/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -35,21 +41,26 @@ import { CourseDetailPageComponent } from './course-detail-page/course-detail-pa
     TestimonyComponent,
     CoursesPageComponent,
     CourseDetailPageComponent,
+    FilterPipe,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'my-app' }),
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: 'home', component: HomeComponent, pathMatch: 'full' },
       { path: 'courses', component: CoursesPageComponent, pathMatch: 'full' },
-      { path: 'courses/:id', component: CourseDetailPageComponent, pathMatch: 'full' },
+      { path: 'courses/:name', component: CourseDetailPageComponent, pathMatch: 'full' },
       { path: 'contact', component: ContactComponent, pathMatch: 'full'},
       { path: 'about', component: AboutComponent, pathMatch: 'full' },
-      { path: '**', redirectTo: '' }
+      { path: '**', redirectTo: 'home' }
     ]),
     HttpModule,
+    FormsModule,
+    TabModule,
+    RecaptchaModule.forRoot(),
+    RecaptchaFormsModule
   ],
   exports: [RouterModule],
-  providers: [CourseServiceService],
+  providers: [CourseServiceService, ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

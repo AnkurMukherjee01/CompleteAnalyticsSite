@@ -4,6 +4,13 @@
     color: $color-dark;
 }
 
+.card:hover{
+    transform: scale(1.05);
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+    z-index: 5;
+}
+
 .card{
     width: 25rem;
     margin: 20px;
@@ -20,6 +27,14 @@
 }
 .joinBtn{
     width: 100%;
+    background-color: $color-lightbg;
+    color: $color-dark;
+}
+img{
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    margin: auto;
 }
 
 .rating{

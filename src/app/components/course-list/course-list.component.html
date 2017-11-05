@@ -1,4 +1,4 @@
-<page-header [text]="title"></page-header>
 <div class="container-fluid courseList">
-  <course-tile *ngFor="let tile of courses" [course]="tile"></course-tile>
+  <div *ngIf="filterBox" class="filterBox"><input class="form-control" type="Text" placeholder="Filter.." [(ngModel)]="searchbox" /></div>
+  <course-tile *ngFor="let tile of courses | filter:searchbox:'name'" [course]="tile"></course-tile>
 </div>

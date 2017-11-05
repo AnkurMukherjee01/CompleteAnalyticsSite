@@ -6,12 +6,25 @@ import 'rxjs/add/operator/filter';
 
 @Injectable()
 export class CourseServiceService {
-
   constructor(private http: Http) { }
 
   getAllCourses() : Observable<any>{
     return this.http.get('/assets/courses.json')
       .map((res) => res.json())
+  }
+
+  cleanName(str){
+    return str.replace(/\W+/g, '-').toLowerCase();
+  }
+
+  getCourse(name): Observable<any>{
+    return this.http.get('/assets/courses.json')
+      .map((res) => res.json())
+      .map((data) => data.courses)
+      .map(memberArray => {
+        return memberArray.filter(x=> this.cleanName(x.name) === name)
+      })
+      .map(arr => arr[0]);
   }
 
 }
