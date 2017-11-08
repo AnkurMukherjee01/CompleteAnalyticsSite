@@ -2,6 +2,8 @@
   <div class="container allContent">
     <div class="content">
         <banner-image src="assets/images/courses.jpg" height="400"></banner-image>
+        
+        <button class="btn btn-primary" (click)="downloadPDF()">Download</button>     
         <tabs>
           <tab tabTitle="Course Outline">
             I am the foo content
@@ -13,10 +15,7 @@
           <tab tabTitle="Benefits">
             I am the bar content
           </tab>
-          <tab tabTitle="Download">
-            I am the bar content
-          </tab>
-        </tabs>     
+        </tabs>
     </div>
     <div class="followContent" *ngIf="course">
       <div class="courseDetails">

@@ -1,3 +1,4 @@
+import { FileDownloadService } from './../services/file-download.service';
 import { CourseServiceService } from './../services/course-service.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
@@ -10,7 +11,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 export class CourseDetailPageComponent implements OnInit {
 
   course
-  constructor(private route: ActivatedRoute, private courseSevice: CourseServiceService) { }
+  constructor(private route: ActivatedRoute, private courseSevice: CourseServiceService, private fileDownload: FileDownloadService) { }
 
   ngOnInit() {
     this.route.params.forEach((params: Params) => {
@@ -20,6 +21,10 @@ export class CourseDetailPageComponent implements OnInit {
         console.log(this.course);
       })
     });
+  }
+
+  downloadPDF(){
+    this.fileDownload.downloadFile('assets/pdf_courses/test.pdf', 'Advanced Excel');
   }
 
 }

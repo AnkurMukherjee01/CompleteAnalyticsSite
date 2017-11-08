@@ -23,6 +23,7 @@ import { ContactComponent } from './contact/contact.component';
 import { CoursesPageComponent } from './courses-page/courses-page.component';
 import { CourseDetailPageComponent } from './course-detail-page/course-detail-page.component';
 import { ContactService } from './services/contact.service';
+import { FileDownloadService } from './services/file-download.service';
 import { FilterPipe } from './components/filter.pipe';
 
 @NgModule({
@@ -60,7 +61,7 @@ import { FilterPipe } from './components/filter.pipe';
     RecaptchaFormsModule
   ],
   exports: [RouterModule],
-  providers: [CourseServiceService, ContactService],
+  providers: [CourseServiceService, ContactService, FileDownloadService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
