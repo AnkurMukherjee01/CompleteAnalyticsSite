@@ -25,6 +25,9 @@ import { CourseDetailPageComponent } from './course-detail-page/course-detail-pa
 import { ContactService } from './services/contact.service';
 import { FileDownloadService } from './services/file-download.service';
 import { FilterPipe } from './components/filter.pipe';
+import { CorporateTrainingComponent } from './corporate-training/corporate-training.component';
+import { EmployerComponent } from './employer/employer.component';
+import { InstructorComponent } from './instructor/instructor.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +46,9 @@ import { FilterPipe } from './components/filter.pipe';
     CoursesPageComponent,
     CourseDetailPageComponent,
     FilterPipe,
+    CorporateTrainingComponent,
+    EmployerComponent,
+    InstructorComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'my-app' }),
@@ -52,6 +58,9 @@ import { FilterPipe } from './components/filter.pipe';
       { path: 'courses/:name', component: CourseDetailPageComponent, pathMatch: 'full' },
       { path: 'contact', component: ContactComponent, pathMatch: 'full'},
       { path: 'about', component: AboutComponent, pathMatch: 'full' },
+      { path: 'corporatetraining', component: CorporateTrainingComponent, pathMatch: 'full' },
+      { path: 'employer', component: EmployerComponent, pathMatch: 'full' },
+      { path: 'instructor', component: InstructorComponent, pathMatch: 'full' },
       { path: '**', redirectTo: 'home' }
     ]),
     HttpModule,
