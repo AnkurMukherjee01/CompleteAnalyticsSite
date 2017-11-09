@@ -28,6 +28,9 @@ import { FilterPipe } from './components/filter.pipe';
 import { CorporateTrainingComponent } from './corporate-training/corporate-training.component';
 import { EmployerComponent } from './employer/employer.component';
 import { InstructorComponent } from './instructor/instructor.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { NgxCarouselModule } from 'ngx-carousel';
+import 'hammerjs';
 
 @NgModule({
   declarations: [
@@ -49,6 +52,7 @@ import { InstructorComponent } from './instructor/instructor.component';
     CorporateTrainingComponent,
     EmployerComponent,
     InstructorComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'my-app' }),
@@ -67,7 +71,8 @@ import { InstructorComponent } from './instructor/instructor.component';
     FormsModule,
     TabModule,
     RecaptchaModule.forRoot(),
-    RecaptchaFormsModule
+    RecaptchaFormsModule,
+    NgxCarouselModule
   ],
   exports: [RouterModule],
   providers: [CourseServiceService, ContactService, FileDownloadService],

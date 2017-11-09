@@ -12,6 +12,8 @@
 .card{
     flex: 1 1;
     padding: 20px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-size: 1.2em;
 }
@@ -21,4 +23,8 @@
     transition-timing-function: ease-in-out;
     z-index: 5;
     background-color: $color-lightbg;
+}
+.card img{
+    width: 100px;
+    height: 100px;
 }

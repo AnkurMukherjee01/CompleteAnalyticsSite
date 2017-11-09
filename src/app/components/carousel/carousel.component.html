@@ -1,0 +1,16 @@
+<ngx-carousel
+[inputs]="carouselOne"
+(carouselLoad)="myfunc($event)">
+  <ngx-item NgxCarouselItem *ngFor="let url of urls">
+    <img class="img" src="{{url}}">
+  </ngx-item>
+
+  <button NgxCarouselPrev class='leftRs'>
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Next</span>
+  </button>
+  <button NgxCarouselNext class='rightRs'>
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+  </button>
+</ngx-carousel>
