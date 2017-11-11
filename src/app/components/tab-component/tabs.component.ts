@@ -11,7 +11,7 @@ import { TabComponent } from './tab.component';
             <i *ngIf="tab.tabIcon" class="glyphicon glyphicon-{{tab.tabIcon}}"></i>{{tab.tabTitle}}
             </a>
             </li>
-            <li style="float: right"><button class="btn btn-download" (click)="downloadPDF()"><span>Download</span><i class="glyphicon glyphicon-download"></i></button></li>
+            <li style="float: right"><button class="btn btn-download" (click)="downloadClick()"><span>Download</span><i class="glyphicon glyphicon-download"></i></button></li>
         </ul>
         <ng-content></ng-content>
     `
@@ -21,6 +21,7 @@ export class TabsComponent implements AfterContentInit {
 
     @Output() tabChangeEmitter = new EventEmitter<number>();
 
+    @Output() downloadEvent = new EventEmitter<any>();
     // contentChildren are set
     ngAfterContentInit() {
         // get all active tabs
@@ -127,5 +128,8 @@ export class TabsComponent implements AfterContentInit {
             }
         }
         return null; //no active tab found
+    }
+    downloadClick(): void{
+        this.downloadEvent.emit();
     }
 }

@@ -9,7 +9,7 @@
           </div> 
         </div>
       
-        <tabs (tabChangeEmitter)="tabChanged($event)">
+        <tabs (tabChangeEmitter)="tabChanged($event)" (downloadEvent)="downloadPDF()">
           <tab tabTitle="Course Outline" tabIcon="th-list">
             <div  *ngIf="currentContent">
               <div class="section" *ngFor="let section of currentContent">
