@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { NgxCarousel } from 'ngx-carousel';
+import { NguCarousel } from '@ngu/carousel';
+import { UtilService } from '../../services/util.service';
 @Component({
   selector: 'carousel',
   templateUrl: './carousel.component.html',
@@ -7,10 +8,14 @@ import { NgxCarousel } from 'ngx-carousel';
 })
 export class CarouselComponent implements OnInit {
 
-  urls = ["assets/images/cover4.jpeg","assets/images/cover2.jpeg","assets/images/cover1.jpeg"]
-  constructor() { }
+  public carouselData;
+  constructor(private utilService: UtilService) { 
+    this.utilService.getCarouselData().subscribe((res) => {
+      this.carouselData = res;
+    })
+  }
 
-  public carouselOne: NgxCarousel;
+  public carouselOne: NguCarousel;
   
     ngOnInit() {
       this.carouselOne = {
@@ -26,10 +31,6 @@ export class CarouselComponent implements OnInit {
         loop: true,
         custom: 'banner'
       }
-    }
-  
-    public myfunc(event: Event) {
-       
     }
   
 }

@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpModule } from '@angular/http';
-import { TabModule } from 'angular-tabs-component'
 import { RecaptchaModule } from 'ng-recaptcha'
 import { RecaptchaFormsModule } from 'ng-recaptcha/forms';
+import { NguCarouselModule } from '@ngu/carousel';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -29,8 +29,9 @@ import { CorporateTrainingComponent } from './corporate-training/corporate-train
 import { EmployerComponent } from './employer/employer.component';
 import { InstructorComponent } from './instructor/instructor.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
-import { NgxCarouselModule } from 'ngx-carousel';
-import 'hammerjs';
+import { UtilService } from './services/util.service';
+import { CompaniesComponent } from './components/companies/companies.component';
+import {TabComponent, TabsComponent, OnTabDeselect, OnTabSelect} from './components/tab-component/index';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,9 @@ import 'hammerjs';
     CorporateTrainingComponent,
     EmployerComponent,
     InstructorComponent,
-    CarouselComponent
+    CarouselComponent,
+    CompaniesComponent,
+    TabComponent, TabsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'my-app' }),
@@ -69,13 +72,12 @@ import 'hammerjs';
     ]),
     HttpModule,
     FormsModule,
-    TabModule,
     RecaptchaModule.forRoot(),
     RecaptchaFormsModule,
-    NgxCarouselModule
+    NguCarouselModule
   ],
   exports: [RouterModule],
-  providers: [CourseServiceService, ContactService, FileDownloadService],
+  providers: [CourseServiceService, ContactService, FileDownloadService, UtilService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

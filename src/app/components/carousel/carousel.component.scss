@@ -1,4 +1,45 @@
+@import '~scss/variables.scss';
+ngu-item{
+    position: relative;
+    vertical-align: middle;
+}
 
+ngu-item img{
+    filter: brightness(50%);
+    width: 100%;
+    
+}
+.content{
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: $color-light;
+}
+.content .contentHeader{
+    font-size: 2.5em;
+}
+.content .contentDetail{
+    width: 70%;
+    padding: 20px;
+}
+
+.content button{
+    margin-top: 40px;
+    width: 50%;
+}
+.content button .glyphicon{
+    top: 5px;
+    margin-left: 3px;
+}
+.leftRs .glyphicon, .rightRs .glyphicon{
+    font-size: 2em;
+    color: $color-light;
+}
 .leftRs {
     position: absolute;
     margin: auto;
@@ -6,12 +47,9 @@
     bottom: 0;
     width: 50px;
     height: 50px;
-    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, .3);
+    background-color: transparent;
+    border: 0px;
     left: 10%;
-}
-ngx-carousel{
-    width: 100%;
-    overflow: hidden;
 }
 .rightRs {
     position: absolute;
@@ -20,12 +58,7 @@ ngx-carousel{
     bottom: 0;
     width: 50px;
     height: 50px;
-    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, .3);
+    background-color: transparent;
+    border: 0px;
     right: 10%;
-}
-.img{
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    display: block;
 }

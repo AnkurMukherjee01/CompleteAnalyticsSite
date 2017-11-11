@@ -1,4 +1,46 @@
 @import '~scss/variables.scss';
+:host /deep/{
+    tabs{
+        margin-top: 20px;
+    }
+    tabs .pane{
+        background-color: $color-light;
+    }
+    tabs>ul{
+        width: 100%;
+        background-color: #ccc;
+        border-radius: 10px;
+        height: 40px;
+    }
+    tabs>ul>li{
+        margin-bottom: 0px;
+    }
+    tabs>ul>li>a{
+        border: 0px;
+        margin-right: 0px;
+        color: $color-dark;
+    }
+    tabs>ul>li>a>i.glyphicon{
+        margin-right: 5px;
+    }
+    .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+        background-color: $color-lightbg;
+        color: $color-dark;
+        border-radius: 5px;
+        border: 0px;
+    }
+    .btn-download{
+        background-color: $color-darkbg;
+        color: $color-light;
+        font-weight: bold;
+        height: 40px;
+    }
+    .btn-download i.glyphicon{
+        margin-left: 3px;
+        font-size: 1.3em;
+    }
+}
+
 .courseDetailPage{
     margin-top: 50px;
 }
@@ -12,14 +54,10 @@
     flex-direction: column;
 }
 
-tabs{
-    min-height: 0px;
-}
-
 .followContent{
     width: 20%;
-    background-color: $color-darkbg;
-    color: $color-light;
+    background-color: #ccc;
+    color: $color-dark;
     position: fixed;
     right: 0;
     height: 100%;
@@ -41,7 +79,38 @@ tabs{
 .courseDetails table tr td{
     padding: 10px;
 }
-.joinBtn{
+.btn-join{
     width: 100%;
+    background-color: $color-darkbg;
+    color: $color-light;
+}
 
+.imgContent{
+    position: absolute;
+    width: 75%;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: $color-light;
+}
+.imgContent .contentHeader{
+    font-size: 2.5em;
+}
+.imgContent .contentDetail{
+    width: 70%;
+    padding: 20px;
+}
+
+.imgContent button{
+    margin-top: 40px;
+    width: 50%;
+}
+.imgContent button .glyphicon{
+    top: 5px;
+    margin-left: 3px;
+}
+.imgBanner img{
+    filter: brightness(40%);
 }

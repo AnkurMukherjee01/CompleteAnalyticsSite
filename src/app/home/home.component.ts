@@ -1,3 +1,4 @@
+import { UtilService } from './../services/util.service';
 import { CourseServiceService } from './../services/course-service.service';
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
@@ -11,11 +12,16 @@ export class HomeComponent implements OnInit {
 
   public courses;
   public popularCourses;
-  constructor(private _title: Title, private _meta: Meta, private courseService: CourseServiceService) {
-    this.courseService.getAllCourses().subscribe((res) => {
-      this.courses = res.courses;
-      this.popularCourses = res.popularCourses;
-    });
+
+  constructor(
+    private _title: Title,
+    private _meta: Meta,
+    private courseService: CourseServiceService) {
+
+      this.courseService.getAllCourses().subscribe((res) => {
+        this.courses = res.courses;
+        this.popularCourses = res.popularCourses;
+      });
    }
 
   ngOnInit() {

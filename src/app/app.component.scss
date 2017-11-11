@@ -1,4 +1,28 @@
+@import '~scss/variables.scss';
 :host /deep/{
     font-family: open-sans;
     font-weight: bold;
+
+    .btn-cta{
+        background-color: $color-lightbg;
+        color: $color-dark;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 25px;
+        padding: 5px;
+        margin: 20px;
+        box-shadow: 1px 1px 5px black;
+    }
+    .btn-cta:hover{
+        transform: scale(1.1);
+        transition-duration: 0.05s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .contentHeader{
+        font-weight: bold;
+        text-align: center;
+        
+    }
 }
+

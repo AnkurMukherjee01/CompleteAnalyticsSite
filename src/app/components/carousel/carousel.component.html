@@ -1,16 +1,20 @@
-<ngx-carousel
-[inputs]="carouselOne"
-(carouselLoad)="myfunc($event)">
-  <ngx-item NgxCarouselItem *ngFor="let url of urls">
-    <img class="img" src="{{url}}">
-  </ngx-item>
+<ngu-carousel
+[inputs]="carouselOne">
+  <ngu-item NguCarouselItem *ngFor="let data of carouselData">
+    <img class="img" src="{{data.url}}">
+    <div class="content">
+      <span class="contentHeader">{{data.contentHeader}}</span>
+      <span class="contentDetail" *ngIf="data.content != ''">{{data.content}}</span>
+      <button class="btn btn-cta" *ngIf="data.button">{{data.buttonName}}<span [class]="data.buttonIcon"></span></button>
+    </div>
+  </ngu-item>
 
-  <button NgxCarouselPrev class='leftRs'>
+  <button NguCarouselPrev class='leftRs'>
     <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Next</span>
+    <span class="sr-only">Previous</span>
   </button>
-  <button NgxCarouselNext class='rightRs'>
+  <button NguCarouselNext class='rightRs'>
       <span class="glyphicon glyphicon-chevron-right"></span>
       <span class="sr-only">Next</span>
   </button>
-</ngx-carousel>
+</ngu-carousel>

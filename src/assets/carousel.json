@@ -1,0 +1,22 @@
+[{
+    "url": "assets/images/cover3.png",
+    "contentHeader" : "Schedule a demo class today",
+    "content": "Talk to us on +91 9886096090 to know more about the Courses, Timings & Schedule a Demo Class Today",
+    "button" : true,
+    "buttonName": "Schedule Demo",
+    "buttonIcon" : "glyphicon glyphicon-time"
+},{
+    "url": "assets/images/cover1.png",
+    "contentHeader" : "Header Content",
+    "content": "",
+    "button" : true,
+    "buttonName": "More",
+    "buttonIcon" : "glyphicon glyphicon-circle-arrow-right"
+},{
+    "url": "assets/images/cover2.png",
+    "contentHeader" : "Another Header",
+    "content": "Another test",
+    "button" : false,
+    "buttonName": "",
+    "buttonIcon": ""
+}]

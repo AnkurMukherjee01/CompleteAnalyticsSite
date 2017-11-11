@@ -27,4 +27,9 @@ export class CourseServiceService {
       .map(arr => arr[0]);
   }
 
+  getCourseDetails(id, content): Observable<any>{
+    return this.http.get('assets/courses/' + id + '/content.json')
+      .map((res) => res.json())
+      .map((data) => data[content])
+  }
 }

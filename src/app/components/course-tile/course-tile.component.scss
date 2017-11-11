@@ -29,6 +29,12 @@
     width: 100%;
     background-color: $color-lightbg;
     color: $color-dark;
+    font-size: 1.3em;
+
+    span{
+        top: 3px;
+        margin-left: 5px;
+    }
 }
 img{
     height: 100px;
