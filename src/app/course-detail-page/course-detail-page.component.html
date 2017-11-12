@@ -5,7 +5,7 @@
           <img src="assets/images/cover2.png" width="100%" height="400">
           <div *ngIf="course" class="imgContent">
             <span class="contentHeader">{{course.name}}</span>
-            <!-- <span class="contentDetail" *ngIf="course.content != ''">{{data.content}}</span> -->
+            <span class="contentDetail"><h3 class="price"><b>Price: {{course.price | currency:'INR':true:'4.0-0'}}</b></h3></span>
           </div> 
         </div>
       
@@ -41,7 +41,11 @@
             </div>
           </tab>
         </tabs>
-    </div>
+        <h2 class="contentHeader">Review for this course</h2>
+        <div class="courseReview">
+          <testimony-tile *ngFor="let data of reviewData" [data]="data"></testimony-tile>
+        </div>
+      </div>
     <div class="followContent" *ngIf="course">
       <div class="courseDetails">
         <span><b>Course Details</b></span>

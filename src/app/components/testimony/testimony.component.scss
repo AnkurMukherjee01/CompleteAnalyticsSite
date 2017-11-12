@@ -1,0 +1,29 @@
+@import '~scss/variables.scss';
+:host /deep/{
+    .tile{
+        box-shadow: 0 0px 0px!important;
+    }
+}
+
+.leftRs .glyphicon, .rightRs .glyphicon{
+    font-size: 2em;
+    color: $color-dark;
+}
+.leftRs {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 0px;
+}
+.rightRs {
+    position: absolute;
+    top: 50px;
+    right:0;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 0px;
+}

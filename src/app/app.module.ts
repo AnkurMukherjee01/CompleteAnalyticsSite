@@ -6,6 +6,8 @@ import { HttpModule } from '@angular/http';
 import { RecaptchaModule } from 'ng-recaptcha'
 import { RecaptchaFormsModule } from 'ng-recaptcha/forms';
 import { NguCarouselModule } from '@ngu/carousel';
+import { ModalModule } from 'ngx-modialog';
+import { BootstrapModalModule } from 'ngx-modialog/plugins/bootstrap';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -32,6 +34,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { UtilService } from './services/util.service';
 import { CompaniesComponent } from './components/companies/companies.component';
 import {TabComponent, TabsComponent, OnTabDeselect, OnTabSelect} from './components/tab-component/index';
+import { TestimonyTileComponent } from './components/testimony-tile/testimony-tile.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +58,8 @@ import {TabComponent, TabsComponent, OnTabDeselect, OnTabSelect} from './compone
     InstructorComponent,
     CarouselComponent,
     CompaniesComponent,
-    TabComponent, TabsComponent
+    TabComponent, TabsComponent,
+    TestimonyTileComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'my-app' }),
@@ -74,7 +78,9 @@ import {TabComponent, TabsComponent, OnTabDeselect, OnTabSelect} from './compone
     FormsModule,
     RecaptchaModule.forRoot(),
     RecaptchaFormsModule,
-    NguCarouselModule
+    NguCarouselModule,
+    ModalModule.forRoot(),
+    BootstrapModalModule,
   ],
   exports: [RouterModule],
   providers: [CourseServiceService, ContactService, FileDownloadService, UtilService],

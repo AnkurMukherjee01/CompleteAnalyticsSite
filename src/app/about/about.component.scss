@@ -1,26 +1,31 @@
 @import "../../scss/variables";
 
-:host{
-  font-size: 1.2em;
-}
-
-
 .aboutusContainer{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-color: $color-gray;
   color: $color-dark;
   margin-top: 50px;
 }
 
+.banner{
+  filter: brightness(50%);
+  width: 100%;
+}
 .header{
   font-size: 1.5em;
-  text-align: center;
-  margin-top: 15px;
   width: 85%;
-  margin-left: 10px;
+  padding: 10px;
 }
-
+.rightContent{
+  min-width: 30%;
+}
+.headerContainer{
+  background-color: $color-lightbg;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; 
+  
+}
 .aboutusContainer .content{
   padding: 0px 10px 0px 10px;
   margin: 15px;

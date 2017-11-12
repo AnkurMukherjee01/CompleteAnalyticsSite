@@ -5,6 +5,7 @@
 .rowContainer{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin: 20px;
     padding: 20px;
 }

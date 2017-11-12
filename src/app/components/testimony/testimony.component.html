@@ -1,5 +1,18 @@
 <div class="container">
-  <div class="row">
-    
-  </div>
+  <h2 class="contentHeader">See what our students say</h2>
+  <ngu-carousel
+  [inputs]="testimonyCarousel">
+    <ngu-tile NguCarouselItem *ngFor="let data of testimoniesData">
+        <testimony-tile [data]="data"></testimony-tile>
+    </ngu-tile>
+  
+    <button NguCarouselPrev class='leftRs'>
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button NguCarouselNext class='rightRs'>
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+    </button>
+  </ngu-carousel>
 </div>

@@ -13,7 +13,24 @@ export class UtilService {
 
   getCompaniesURL(): Observable<any>{
     return this.http.get('assets/companiesLogo.json')
-    .map((res) => res.json())
+      .map((res) => res.json())
+  }
+
+  getTestimoniesData(section): Observable<any>{
+    return this.http.get('assets/testimonies.json')
+      .map((res) => res.json())
+      .map((res) => res[section])
+  }
+
+  getTestimoniesCoursesData(section, id): Observable<any>{
+    return this.http.get('assets/testimonies.json')
+      .map((res) => res.json())
+      .map((res) => res[section])
+      .map(memberArray => {
+        return memberArray.filter(x=> x.id === id)
+      })
+      .map(arr => arr[0])
+      .map((res) => res.reviews)
   }
 
 }

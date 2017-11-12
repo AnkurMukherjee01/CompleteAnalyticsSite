@@ -11,9 +11,15 @@
     height: 50px;
     z-index: 15;
 }
-.navbar-collapse.collapse{
+.navbar-header{
+    height: 50px;
+}
+.navbar-collapse.collapse.show{
     padding-left: 0px;
     padding-right: 0px;
+    background-color: $color-gray;
+    margin-top: -1px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
 .navbar-brand {
   padding: 0px;
