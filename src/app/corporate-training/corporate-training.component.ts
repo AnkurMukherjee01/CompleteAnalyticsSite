@@ -1,3 +1,4 @@
+import { ContactService } from './../services/contact.service';
 import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
@@ -8,10 +9,10 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 export class CorporateTrainingComponent implements OnInit {
 
   recaptchaDone = false;
-  constructor() { }
+  constructor(private contactService: ContactService) { }
 
   @ViewChild('captchaRef') recaptcha;
-  ngOnInit() {
+  ngOnInit() {  
   }
 
   resolved(ev){
@@ -19,15 +20,15 @@ export class CorporateTrainingComponent implements OnInit {
   }
 
   onSubmit(form){
-    // this.contactService.postMessageData(form.value).subscribe((res) => {
-    //   if(res.status == 200){
-    //     alert("Message sent successfully");
-    //     form.reset();
-    //     this.recaptcha.reset();
-    //   }
-    // }, (err) => {
-    //   alert("Message not sent. Please try again");
-    // })
+    this.contactService.postMessageData(form.value).subscribe((res) => {
+      if(res.status == 200){
+        alert("Message sent successfully");
+        form.reset();
+        this.recaptcha.reset();
+      }
+    }, (err) => {
+      alert("Message not sent. Please try again");
+    })
   }
 
 
