@@ -1,7 +1,8 @@
 <div class="corporateTrainingPage">
-    <div class="container contactContainer">
-      <div class="contactForm">
-      <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+    <div class="container formContainer">
+      <img class="banner" src="assets/images/corporateTraining.jpg">
+      <div class="corporateTrainingForm">
+      <form #corporateTrainingForm="ngForm" (ngSubmit)="onSubmit(corporateTrainingForm)">
           <div class="form-group">
             <label for="name">Name*</label>
             <input type="text" class="form-control" name="name" ngModel required #name="ngModel">
@@ -53,7 +54,7 @@
   
           <re-captcha #captchaRef="reCaptcha" (resolved)="resolved($event)" siteKey="6Lc3NTcUAAAAAEbbUbuzavH2Gni0yYJ0Fsvs1HbE" required></re-captcha>
       
-          <button type="submit" [disabled]="!recaptchaDone || contactForm.invalid" class="btn btn-success">Send</button>
+          <button type="submit" [disabled]="!recaptchaDone || corporateTrainingForm.invalid" class="btn btn-success">Send</button>
       
       </form>
     </div>

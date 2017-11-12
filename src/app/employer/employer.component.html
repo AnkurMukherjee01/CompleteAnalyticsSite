@@ -1,3 +1,62 @@
-<p>
-  employer works!
-</p>
+<div class="employerPage">
+    <div class="container formContainer">
+      <img class="banner" src="assets/images/analytics_cover.png">
+      <div class="employeeForm">
+      <form #employeeForm="ngForm" (ngSubmit)="onSubmit(employeeForm)">
+          <div class="form-group">
+            <label for="name">Name*</label>
+            <input type="text" class="form-control" name="name" ngModel required #name="ngModel">
+          </div>
+          <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+            <div *ngIf="name.errors.required">
+              Name is required.
+            </div>
+          </div>
+      
+          <div class="form-group">
+            <label for="email">Email*</label>
+            <input type="email" class="form-control" name="email" email="true" ngModel #email="ngModel" required>
+          </div>
+          <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
+            <div *ngIf="email.errors.required">
+              Email is required.
+            </div>
+            <div *ngIf="email.errors.email">
+              Please enter a valid email.
+            </div>
+          </div>
+  
+          <div class="form-group">
+              <label for="name">Phone No</label>
+              <input type="text" class="form-control" name="phoneNo" ngModel>
+          </div>
+          
+  
+          <div class="form-group">
+              <label for="name">Subject*</label>
+              <input type="text" class="form-control" name="subject" ngModel #subject="ngModel" required>
+          </div>
+          <div *ngIf="subject.invalid && (subject.dirty || subject.touched)" class="alert alert-danger">
+            <div *ngIf="subject.errors.required">
+               Subject is required.
+            </div>
+          </div>
+  
+          <div class="form-group">
+              <label for="name">Message*</label>
+              <input type="textarea" class="form-control" name="message" ngModel #message="ngModel" required>
+          </div>
+          <div *ngIf="message.invalid && (message.dirty || message.touched)" class="alert alert-danger">
+            <div *ngIf="message.errors.required">
+              Message is required.
+            </div>
+          </div>
+  
+          <re-captcha #captchaRef="reCaptcha" (resolved)="resolved($event)" siteKey="6Lc3NTcUAAAAAEbbUbuzavH2Gni0yYJ0Fsvs1HbE" required></re-captcha>
+      
+          <button type="submit" [disabled]="!recaptchaDone || employeeForm.invalid" class="btn btn-success">Send</button>
+      
+      </form>
+    </div>
+  </div>
+</div>

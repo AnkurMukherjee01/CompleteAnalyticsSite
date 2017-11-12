@@ -6,6 +6,11 @@
     margin-top: 50px;
 }
 
+
+.formContainer img, .formContainer form{
+    width: 60%;
+}
+
 input[required].ng-dirty.ng-invalid{
     border-left: 5px solid red;
 }

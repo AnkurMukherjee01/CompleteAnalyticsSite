@@ -69,9 +69,9 @@ import { TestimonyTileComponent } from './components/testimony-tile/testimony-ti
       { path: 'courses/:name', component: CourseDetailPageComponent, pathMatch: 'full' },
       { path: 'contact', component: ContactComponent, pathMatch: 'full'},
       { path: 'about', component: AboutComponent, pathMatch: 'full' },
-      { path: 'corporatetraining', component: CorporateTrainingComponent, pathMatch: 'full' },
+      { path: 'corporate-training', component: CorporateTrainingComponent, pathMatch: 'full' },
       { path: 'employer', component: EmployerComponent, pathMatch: 'full' },
-      { path: 'instructor', component: InstructorComponent, pathMatch: 'full' },
+      { path: 'become-instructor', component: InstructorComponent, pathMatch: 'full' },
       { path: '**', redirectTo: 'home' }
     ]),
     HttpModule,
