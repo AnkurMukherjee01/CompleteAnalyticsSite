@@ -1,4 +1,5 @@
-[{
+{
+"top":[{
     "name": "Accenture_logo.png",
     "width": 200, 
     "height": 100
@@ -46,7 +47,8 @@
     "name": "Fractal_Logo.png",
     "width": 100, 
     "height": 100
-},{
+}],
+"bottom": [{
     "name": "ge-money-logo.png",
     "width": 100, 
     "height": 100
@@ -99,3 +101,4 @@
     "width": 200, 
     "height": 100
 }]
+}

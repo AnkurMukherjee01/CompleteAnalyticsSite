@@ -56,14 +56,38 @@ app.post('/api/message', (req, res) => {
   messageBody += '\n\n Phone No: ' + req.body.phoneNo;
   messageBody += '\n\n Subject :' + req.body.subject;
   messageBody += '\n\n Message: ' + req.body.message;
-  
+  if(req.body.courseName){
+    messageBody += '\n\n Course Name Downloaded: ' + req.body.courseName;
+  }
+
+  var mailSubject = '';
+  switch(req.body.type){
+    case 'contact':
+      mailSubject = 'Message from Website';
+      break;
+    case 'corporateTraining': 
+      mailSubject = 'Corporate Training Message from Website';
+      break;
+    case 'employer':
+      mailSubject = 'Employer Message from Website';
+      break;
+    case 'instructor':
+      mailSubject = 'Instructor Message from Website';
+      break;
+    case 'download PDF':
+      mailSubject = 'Downloaded PDF from Website';
+      break;
+    default:
+      mailSubject = 'Message from Website';
+  }
+
   transporter.sendMail({
-    from: 'sriram.thiagarajan94@gmail.com',
-    to: 'sriram.thiagarajan94@gmail.com',
-    subject: 'Message from Website',
+    from: config.mailUser,
+    to: config.mailUser,
+    subject: mailSubject,
     text: messageBody,
     auth: {
-        user: 'sriram.thiagarajan94@gmail.com',
+        user: config.mailUser,
         refreshToken: config.refreshToken,
         accessToken: config.accessToken,
         expires: 3600

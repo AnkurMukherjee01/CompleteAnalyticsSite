@@ -20,7 +20,9 @@ export class CorporateTrainingComponent implements OnInit {
   }
 
   onSubmit(form){
-    this.contactService.postMessageData(form.value).subscribe((res) => {
+    var dataToSend = form.value;
+    dataToSend.type = 'corporateTraining';
+    this.contactService.postMessageData(dataToSend).subscribe((res) => {
       if(res.status == 200){
         alert("Message sent successfully");
         form.reset();

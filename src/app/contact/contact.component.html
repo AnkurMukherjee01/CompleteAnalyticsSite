@@ -49,7 +49,7 @@
 
         <div class="form-group">
             <label for="name">Message*</label>
-            <input type="textarea" class="form-control" name="message" ngModel #message="ngModel" required>
+            <textarea style="resize:none" class="form-control" rows="3" name="message" ngModel #message="ngModel" required></textarea>
         </div>
         <div *ngIf="message.invalid && (message.dirty || message.touched)" class="alert alert-danger">
           <div *ngIf="message.errors.required">

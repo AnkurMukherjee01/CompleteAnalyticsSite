@@ -3,6 +3,16 @@
     .tile{
         box-shadow: 0 0px 0px!important;
     }
+
+    div.ngucarousel-items{
+        display: flex;
+    }
+    ngu-tile{
+        flex: 1 0 auto;
+    }
+    ngu-tile .tile, ngu-tile .tile .testimonyContainer{
+        height: 100%;
+    }
 }
 
 .leftRs .glyphicon, .rightRs .glyphicon{

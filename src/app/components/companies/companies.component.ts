@@ -9,10 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CompaniesComponent implements OnInit {
 
-  public companiesUrl;
+  public topCompaniesUrl;
+  public bottomCompaniesUrl;
   constructor(private utilService: UtilService) {
     this.utilService.getCompaniesURL().subscribe(res => {
-      this.companiesUrl = res;
+      this.topCompaniesUrl = res.top;
+      this.bottomCompaniesUrl = res.bottom;
     })
    }
 

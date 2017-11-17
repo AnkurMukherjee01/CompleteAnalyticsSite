@@ -1,10 +1,15 @@
 @import "../../scss/variables";
-
+:host /deep/{
+  .courselist course-list .courseList{
+    justify-content: center;
+  }
+}
 .homepage{
   margin-top: 50px;
   background: #eee;
   
 }
+
 .coursel{
   background: #ccc;
 }

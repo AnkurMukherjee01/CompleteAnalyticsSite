@@ -1,10 +1,12 @@
+import { ContactService } from './../services/contact.service';
 import { UtilService } from './../services/util.service';
 import { FileDownloadService } from './../services/file-download.service';
 import { CourseServiceService } from './../services/course-service.service';
-import { Component, OnInit, ViewContainerRef } from '@angular/core';
+import { Component, OnInit, ViewContainerRef, ViewChild, TemplateRef } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Overlay } from 'ngx-modialog';
-import { Modal } from 'ngx-modialog/plugins/bootstrap';
+import { overlayConfigFactory } from "ngx-modialog";
+import { Modal, BSModalContext } from 'ngx-modialog/plugins/bootstrap';
 
 @Component({
   selector: 'app-course-detail-page',
@@ -18,8 +20,12 @@ export class CourseDetailPageComponent implements OnInit {
   currentTab: string;
   currentContent: any;
   reviewData;
+  recaptchaDone = false;
+  dialogRef;
 
-  constructor(private route: ActivatedRoute, private courseSevice: CourseServiceService, private fileDownload: FileDownloadService, private utilService: UtilService,public modal: Modal) {   }
+  @ViewChild('templateRef') public templateRef: TemplateRef<any>;
+  @ViewChild('captchaRef') recaptcha;
+  constructor(private route: ActivatedRoute, private courseSevice: CourseServiceService, private fileDownload: FileDownloadService, private utilService: UtilService,public modal: Modal, private contactService: ContactService) {   }
   
   ngOnInit() {
     
@@ -38,6 +44,7 @@ export class CourseDetailPageComponent implements OnInit {
         })
       })
     });
+    console.log(this.templateRef);
   }
 
   tabChanged(index){
@@ -49,51 +56,37 @@ export class CourseDetailPageComponent implements OnInit {
     }
   }
 
+  resolved(ev){
+    this.recaptchaDone = true;
+  }
+
+  onSubmit(form){
+    var dataToSend = form.value;
+    dataToSend.type = 'download PDF';
+    dataToSend.courseName = this.course.name;
+    this.contactService.postMessageData(dataToSend).subscribe((res) => {
+      if(res.status == 200){
+        form.reset();
+        this.recaptcha.reset();
+        this.dialogRef.close(true);
+        this.downloadPDF();
+      }
+    }, (err) => {
+      alert("Message not sent. Please try again");
+    })
+  }
+
   downloadPDF(){
-    const dialogRef = this.modal.alert()
-    .size('lg')
-    .showClose(true)
-    .title('Enter Details')
-    .body(`
-    <div class="contactForm">
-    <form>
-        <div class="form-group">
-          <label for="name">Name*</label>
-          <input type="text" class="form-control" name="name" ngModel required #name="ngModel">
-        </div>
-            
-        <div class="form-group">
-          <label for="email">Email*</label>
-          <input type="email" class="form-control" name="email" email="true" ngModel #email="ngModel" required>
-        </div>
-        
-        <div class="form-group">
-            <label for="name">Phone No</label>
-            <input type="text" class="form-control" name="phoneNo" ngModel>
-        </div>
-        
+    let downloadUrl = 'assets/courses/' + this.course.id + '/course_content.pdf';
+    this.fileDownload.downloadFile(downloadUrl, this.course.name);
+  }
 
-        <div class="form-group">
-            <label for="name">Subject*</label>
-            <input type="text" class="form-control" name="subject" ngModel #subject="ngModel" required>
-        </div>
-        
-        <div class="form-group">
-            <label for="name">Message*</label>
-            <input type="textarea" class="form-control" name="message" ngModel #message="ngModel" required>
-        </div>
-        
-        <re-captcha #captchaRef="reCaptcha" (resolved)="resolved($event)" siteKey="6Lc3NTcUAAAAAEbbUbuzavH2Gni0yYJ0Fsvs1HbE" required></re-captcha>
-    
-        <button type="submit" [disabled]="!recaptchaDone || contactForm.invalid" class="btn btn-success">Send</button>
-    
-      </form>
-    </div>
-        `)
-    .open();
-
-    // let downloadUrl = 'assets/courses/' + this.course.id + '/course_content.pdf';
-    // this.fileDownload.downloadFile(downloadUrl, this.course.name);
+  downloadPDFBtn(){
+    this.modal
+    .open(this.templateRef, overlayConfigFactory({ isBlocking: true }, BSModalContext))
+    .then( dialog => {
+      this.dialogRef = dialog;
+    })
   }
 
 }

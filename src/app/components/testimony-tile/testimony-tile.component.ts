@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class TestimonyTileComponent implements OnInit {
 
   @Input() data;
-  contentLength = 500;
+  contentLength = 300;
   moreContent = false;
   constructor() { }
 
