@@ -43,3 +43,9 @@ ngu-tile img{
     background-color: transparent;
     border: 0px;
 }
+
+@media only screen and (max-width: 425px) {
+    ngu-tile img{
+        width:100%;
+    }
+}   

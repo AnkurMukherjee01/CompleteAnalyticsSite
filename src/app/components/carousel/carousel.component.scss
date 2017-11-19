@@ -26,11 +26,12 @@ ngu-item img{
 .content .contentDetail{
     width: 70%;
     padding: 20px;
+    font-size: 1.3em;
 }
 
 .content button{
     margin-top: 40px;
-    width: 50%;
+    min-width: 50%;
 }
 .content button .glyphicon{
     top: 5px;
@@ -61,4 +62,35 @@ ngu-item img{
     background-color: transparent;
     border: 0px;
     right: 10%;
+}
+
+@media only screen and (max-width: 768px) {
+    .content .contentHeader{
+        font-size: 1em;
+    }
+    .content .contentDetail{
+        width: 100%;
+        font-size: 0.8em;
+    }
+    .content button{
+        margin-top: 0px;
+        padding: 0px;
+        width: 40%;
+        font-size: 1em;
+    }
+    .content{
+        width: 100%;
+        left: 0%;
+        right: 0%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .content .contentHeader{
+        font-size: 0.8em;
+    }
+    .content .contentDetail{
+        width: 100%;
+        font-size: 0.7em;
+    }
 }

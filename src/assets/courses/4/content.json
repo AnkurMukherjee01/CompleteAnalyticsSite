@@ -1,10 +1,43 @@
 {
     "Course Outline" : [{
-        "heading" : "Introduction to R",
-        "list": ["Introduction to R – History, Windows of  R, Application, Why R?, compared with other software.", "Data Structures in R – Vector, List, Matrix & Data Frame.", "R Workspace", "Packages in R – What is Package, How to install package, How to use?", "Reading, writing a dataset", "First steps with a dataset – head, tail, summary, class, list, ls()", "Working on case study", "Discussion of case study and understand optimal way of writing code."]
+        "heading" : "Installing R",
+        "list": []
     },{
-        "heading" : "Data Manipulation in R",
-        "list": ["Adding new columns", "Deleting columns", "Functions", "Indexing" ,"Subsetting Data", "Control Structures", "Merge", "Reshape", "Dplyr package- Select, Filter, mutate, summarize etc.,", "Pipeline function", "Usage of SQLDF package", "Working on case Study"]
+        "heading" : "Introduction to R",
+        "list": ["The R environment "," Related software and documentation","R and statistics","Basic Data Types","Getting help with functions and features","R commands, case sensitivity, etc.","Recall and correction of previous commands", "Data permanency and removing objects","Setting your working directory"]
+    },{
+        "heading" : "Vectors and it importance in R ",
+        "list": ["Combining Vector","Vector arithmetic","Vector Index","Numeric vector Index","Logical Index Vector","Named Vector Members","Index vectors; selecting and modifying subsets of a data set","Other types of objects"]
+    },{
+        "heading" : "Objects, their modes and attributes",
+        "list": ["Intrinsic attributes: mode and length ","Changing the length of an object ","Getting and setting attributes ","The class of an object "]
+    },{
+        "heading" : " Arrays and matrices ",
+        "list": ["Arrays ","Array indexing. Subsections of an array ","Index matrices ",{"listHeader":"The array() function","sublist":["Mixed vector and array arithmetic. The recycling rule"]},"The outer product of two arrays ","Generalized transpose of an array ",{"listHeader":"Matrix facilities","sublist":["Matrix multiplication","Linear equations and inversion","5.7.4 Singular value decomposition and determinants","5.7.5 Least squares fitting and the QR decomposition"]},"Forming partitioned matrices, cbind() and rbind() ","The concatenation function, c(), with arrays ","Frequency tables from factors "]
+    },{
+        "heading" : "Lists and data frames",
+        "list": ["Lists",{"listHeader":"Constructing and modifying lists ","sublist":["Concatenating lists"]},{"listHeader":"Data frames","sublist":["Making data frames ","attach() and detach() ","Working with data frames ","arbitrary lists"]}]
+    },{
+        "heading" : "Data Manipulation",
+        "list": ["Sorting Data ","Merging Data ","Aggregating Data","Sub Setting Data"]
+    },{
+        "heading" : "Knowing Apply Family",
+        "list": [" Apply ","By ","Eapply ","Lapply ","Mapply ","Rapply ","Tapply"]
+    },{
+        "heading" : "Reading data from files",
+        "list": ["The read.table() function ","The scan() function ",{"listHeader":"Accessing builtin datasets ","sublist":["Loading data from other R packages"]},"Editing data"]
+    },{
+        "heading" : "Grouping, loops and conditional execution",
+        "list": ["Grouped expressions ",{"listHeader":"Control statements","sublist":["Conditional execution: if statements ","Repetitive execution: for loops, repeat and while"]}]
+    },{
+        "heading" : "Writing your own functions",
+        "list": ["Simple examples ","Defining new binary operators ","Named arguments and defaults ","The ‘...’ argument ","Assignments within functions ","Scope ","Customizing the environment ","Classes, generic functions and object orientation"]
+    },{
+        "heading" : "Plotting Graphs",
+        "list": [" Plotting with base graphics ","Plotting with lattice graphics ","Plotting with ggplot2","Plotting 3D graphs"]
+    },{
+        "heading" : "Statistics Using R",
+        "list": ["Mean, Median, Standard Deviation & Variance","Hypothesis testing examples:- T test, ANOVA, Chi square test","Correlation & Linear regression","Logistic regression"]
     }],
     "Case Study": [{
       "heading": "Coming Soon",

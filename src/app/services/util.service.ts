@@ -35,4 +35,8 @@ export class UtilService {
       .map((res) => res.reviews)
   }
 
+  showContactPopup(){
+    
+  }
+
 }

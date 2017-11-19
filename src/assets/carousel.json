@@ -3,20 +3,23 @@
     "contentHeader" : "Schedule a demo class today",
     "content": "Talk to us on +91 9886096090 to know more about the Courses, Timings & Schedule a Demo Class Today",
     "button" : true,
+    "buttonId": 1,
     "buttonName": "Schedule Demo",
     "buttonIcon" : "glyphicon glyphicon-time"
 },{
-    "url": "assets/images/cover1.png",
-    "contentHeader" : "Header Content",
-    "content": "",
+    "url": "assets/images/cover2.png",
+    "contentHeader" : "Become an instructor",
+    "content": "Golden opportunity to be part of glowing organisation",
     "button" : true,
-    "buttonName": "More",
+    "buttonId": 2,
+    "buttonName": "Become an instructor",
     "buttonIcon" : "glyphicon glyphicon-circle-arrow-right"
 },{
-    "url": "assets/images/cover2.png",
-    "contentHeader" : "Another Header",
-    "content": "Another test",
-    "button" : false,
-    "buttonName": "",
-    "buttonIcon": ""
+    "url": "assets/images/cover1.png",
+    "contentHeader" : "Looking for project",
+    "content": "Look no further",
+    "button" : true,
+    "buttonId": 3,
+    "buttonName": "Project",
+    "buttonIcon": "glyphicon glyphicon-circle-arrow-right"
 }]

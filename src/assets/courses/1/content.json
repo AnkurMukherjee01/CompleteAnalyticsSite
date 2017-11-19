@@ -5,6 +5,27 @@
     },{
         "heading" : "Data Manipulation in R",
         "list": ["Adding new columns", "Deleting columns", "Functions", "Indexing" ,"Subsetting Data", "Control Structures", "Merge", "Reshape", "Dplyr package- Select, Filter, mutate, summarize etc.,", "Pipeline function", "Usage of SQLDF package", "Working on case Study"]
+    },{
+        "heading" : "Visualization in R",
+        "list" : ["Plotting with base grapg – Histogram, Scatter, Boxplot, Bargraph, line graph etc.", "Plotting with ggplot2 – Histogram, Scatter, Boxplot, Bargraph, line graph etc.", "Working on case study"]
+    },{
+        "heading" : "Descriptive Statistics",
+        "list" : ["Measure of central Tendency – Mean, Median and Mode","Measure of dispersion –Range, variance, SD and CV","Measure of Shape – Skewness and Kurtosis"]
+    },{
+        "heading" : "Testing of Hypothesis",
+        "list" : ["Types of Hypothesis","Application of Testing of hypothesis","Steps in testing of hypothesis","Parametric and Non parametric test (T Test, Z test, Paired T test, ANOVA and Chi square test)"]
+    },{
+        "heading" : "Correlation And Regression",
+        "list" : ["Introduction about correlation and Regression","Simple and Multiple Regression","Assumption of Regression","Model Validation","Dummy variable Regression","Variable selection Technique – Forward, Backward and Stepwise Regression"]
+    },{
+        "heading" : "Logistic Regression",
+        "list" : ["Introduction and its application","Why Logistic Regression","Logistic Regression Equation form","Data Preparation for logistic regression","Case study","Model Validation","Interpretation of output","Scoring"]
+    },{
+        "heading" : "Multivariate Analysis ",
+        "list" : [{"listHeader":"Cluster Analysis","sublist":["Euclidean Distance","Hierarchical cluster : Linkage, centroid and Wards methods","Non Hierarchical cluster (K Means cluster)"]},{"listHeader":"Factor Analysis","sublist": ["How to decide number of factors","Varmax Rotation"]},"Conjoint Analysis",{"listHeader":"Market Basket Analysis","sublist": ["Support","Confident","Lift"]},{"listHeader":"Decision Tree","sublist":["CHAID","CART"]}]
+    },{
+        "heading" : "Time Series Analysis",
+        "list" : ["Time Series Component",{"listHeader":"Smoothing Technique","sublist":["Moving average","Exponential smoothing"]},{"listHeader":"Forecasting","sublist":["Trend Forecasting","Auto Regression","Moving Average",{"listHeader": "ARIMA", "sublist":["Identification","Estimation","Diagnosis","Forecasting"]}]}]
     }],
     "Case Study": [{
       "heading": "Coming Soon",

@@ -22,14 +22,15 @@ export class CompaniesComponent implements OnInit {
   ngOnInit() {
     this.companyCarousel = {
       grid: {xs: 2, sm: 3, md: 3, lg: 5, all: 0},
-      slide: 2,
+      slide: 3,
       speed: 400,
-      animation: 'lazy',
+      interval: 3000,
       point: {
         visible: true
       },
-      load: 2,
+      load: 5,
       touch: true,
+      loop: true,
       easing: 'ease'
     }
   }

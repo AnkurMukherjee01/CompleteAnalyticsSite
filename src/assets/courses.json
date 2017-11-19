@@ -6,16 +6,16 @@
         "classes": 10,
         "tools" : "R",
         "img": "assets/images/r_logo.png", 
-        "learning_mode": "Live Training",
+        "learning_mode": "Classroom Training",
         "price" : 22000
     },{
         "id" : 2,
-        "name" : "SAS base and advance for Data science",
+        "name" : "SAS base and advance",
         "duration" : 60,
         "classes": 10,
         "tools" : "SAS",
         "img": "assets/images/sas_logo.png",
-        "learning_mode": "Live Training",
+        "learning_mode": "Classroom Training",
         "price" : 10000
     },{
         "id" : 3,
@@ -24,7 +24,7 @@
         "classes": 10,
         "tools" : "Python",
         "img": "assets/images/python_logo.png",
-        "learning_mode": "Live Training",
+        "learning_mode": "Classroom Training",
         "price" : 10000
     },{
         "id" : 4,
@@ -33,7 +33,7 @@
         "classes": 10,
         "tools" : "R",
         "img": "assets/images/r_logo.png",
-        "learning_mode": "Live Training",
+        "learning_mode": "Classroom Training",
         "price" : 10000
     },{
         "id" : 5,
@@ -42,7 +42,7 @@
         "classes": 10,
         "tools" : "R",
         "img": "assets/images/r_logo.png",
-        "learning_mode": "Live Training",
+        "learning_mode": "Classroom Training",
         "price" : 20000
     },{
         "id" : 6,
@@ -51,7 +51,7 @@
         "classes": 10,
         "tools" : "Tableau",
         "img": "assets/images/tableau_logo.png",
-        "learning_mode": "Live Training",
+        "learning_mode": "Classroom Training",
         "price" : 10000
     },{
         "id" : 7,
@@ -60,7 +60,7 @@
         "classes": 10,
         "tools" : "Excel",
         "img": "assets/images/excel_logo.png",
-        "learning_mode": "Live Training",
+        "learning_mode": "Classroom Training",
         "price" : 4500
     },{
         "id" : 8,
@@ -69,7 +69,7 @@
         "classes": 10,
         "tools" : "Excel",
         "img": "assets/images/excel_logo.png",
-        "learning_mode": "Live Training",
+        "learning_mode": "Classroom Training",
         "price" : 6500
     }],
 
@@ -81,16 +81,16 @@
         "classes": 10,
         "tools" : "R",
         "img": "assets/images/r_logo.png", 
-        "learning_mode": "Live Training",
+        "learning_mode": "Classroom Training",
         "price" : 22000
     },{
         "id" : 2,
-        "name" : "SAS base and advance for Data science",
+        "name" : "SAS base and advance",
         "duration" : 60,
         "classes": 10,
         "tools" : "SAS",
         "img": "assets/images/sas_logo.png",
-        "learning_mode": "Live Training",
+        "learning_mode": "Classroom Training",
         "price" : 10000
     },{
         "id" : 3,
@@ -99,7 +99,7 @@
         "classes": 10,
         "tools" : "Python",
         "img": "assets/images/python_logo.png",
-        "learning_mode": "Live Training",
+        "learning_mode": "Classroom Training",
         "price" : 10000
     },{
         "id" : 4,
@@ -108,7 +108,7 @@
         "classes": 10,
         "tools" : "R",
         "img": "assets/images/r_logo.png",
-        "learning_mode": "Live Training",
+        "learning_mode": "Classroom Training",
         "price" : 10000
     }]
 }

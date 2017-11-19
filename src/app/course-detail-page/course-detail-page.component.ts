@@ -44,7 +44,6 @@ export class CourseDetailPageComponent implements OnInit {
         })
       })
     });
-    console.log(this.templateRef);
   }
 
   tabChanged(index){

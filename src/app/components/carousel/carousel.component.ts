@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { ContactPopupComponent } from './../contact-popup/contact-popup.component';
+import { Router } from '@angular/router';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { NguCarousel } from '@ngu/carousel';
 import { UtilService } from '../../services/util.service';
 @Component({
@@ -8,8 +10,9 @@ import { UtilService } from '../../services/util.service';
 })
 export class CarouselComponent implements OnInit {
 
+  @ViewChild('contactPopup') contactPopup: ContactPopupComponent; 
   public carouselData;
-  constructor(private utilService: UtilService) { 
+  constructor(private utilService: UtilService,private router:Router ) { 
     this.utilService.getCarouselData().subscribe((res) => {
       this.carouselData = res;
     })
@@ -30,6 +33,17 @@ export class CarouselComponent implements OnInit {
         touch: true,
         loop: true,
         custom: 'banner'
+      }
+    }
+
+    ctaBtnClicked(id){
+      switch(id){
+        case 1:
+          console.log(this.contactPopup);
+          this.contactPopup.openPopup();
+          break;
+        case 2:
+          this.router.navigate(['/become-instructor']);
       }
     }
   

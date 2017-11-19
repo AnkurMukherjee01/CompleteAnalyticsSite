@@ -1,10 +1,58 @@
 {
     "Course Outline" : [{
-        "heading" : "Introduction to R",
-        "list": ["Introduction to R – History, Windows of  R, Application, Why R?, compared with other software.", "Data Structures in R – Vector, List, Matrix & Data Frame.", "R Workspace", "Packages in R – What is Package, How to install package, How to use?", "Reading, writing a dataset", "First steps with a dataset – head, tail, summary, class, list, ls()", "Working on case study", "Discussion of case study and understand optimal way of writing code."]
+        "heading" : "SAS Training Overview",
+        "list": ["SAS/BASE","SAS/SQL","SAS/MACROS","SAS/GRAPHS","SAS/STAT","SAS/ACCESS","SAS/ODS"]
     },{
-        "heading" : "Data Manipulation in R",
-        "list": ["Adding new columns", "Deleting columns", "Functions", "Indexing" ,"Subsetting Data", "Control Structures", "Merge", "Reshape", "Dplyr package- Select, Filter, mutate, summarize etc.,", "Pipeline function", "Usage of SQLDF package", "Working on case Study"]
+        "heading" : "Introduction",
+        "list": ["How to Use this Document","Little Bit History About SAS","What is SAS?","Launching SAS","Windows in SAS for Windows","Menus in SAS","Working within SAS","Using the Cursor","Using Icons","Using the Enhanced Editor","Writing a SAS Program: the DATA Step "]
+    },{
+        "heading" : "Introduction to SAS Programming",
+        "list": ["Introduction to SAS®","SAS® Software Versions","Using SAS for Windows","System Requirement","Installing SAS® 9.1.3 for MS.Windows,Unix,Linux,Vms,Open/390"]
+    },{
+        "heading" : "Accessing Data",
+        "list": ["Introduction","LIST,COLUMN,FORMTTED AND NAMED  input to read raw data","Using Various Components of an INPUT Statement","Importing raw data from Excel files, Text files, CSV files, ODBC and Access files Etc... using the import procedure, data step and Import wizard","Set statement to read and combine SAS data sets","Using the merge statement to combine SAS data sets","Appending multiple SAS data sets","Explaining about User created functions and system defined functions","Explaining about Types of functions such as Character, Numeric, statistical or mathematical and date or time functions","Statements and types, global statements and local statements","Using loops for easy manipulations","SQL procedure to create data sets","SQL procedure to query multiple tables"]
+    },{
+        "heading" : "Creating Data Structures",
+        "list": ["Introduction","Creating temporary and permanent SAS data sets","Preparing temporary libraries and permanents libraries","Applying conditional assignments and conditional subsets","Using data step statements to export(or write) data to a file","Exporting data to excel and access using the export procedure","Understanding how the data step is compiled and executed","Using data dynamic exchange(DDE) to import excel data","Exporting SAS files to Excel Using DDE."]
+    },{
+        "heading" : "Managing Data",
+        "list": ["Introduction","Modifying variable attributes in the data set","Assignment statement to accumulate variable values across executions of the data step","Using SAS functions to manipulate character data, numeric data, and SAS date and time values","Creating User defined in formats and Formats","Changing SAS default setting using system options, data step options and statement options","Use system defined and user defined formats","Use system defined and user defined in formats","Use SAS functions to convert character data to numeric data and vice versa","Processing data using SAS arrays","Sorting observations in a SAS data set","Using SAS utility procedure to investigate SAS data libraries"]
+    },{
+        "heading" : "Generating Reports",
+        "list": ["Introduction","Generating reports using the PRINT,MEANS,FREQ,TABULATE,REPORT etc…procedures","Generating HTML, RTF, PDF, EXCEL, TEXT, CSV, and PDF reports using ODS statements","Enhancing reports with options and statements"]
+    },{
+        "heading" : "Handling Errors",
+        "list": ["Introduction…","Recognizing and correcting syntax and non-syntax errors","Examining and resolving data errors","Program debugging techniques"]
+    },{
+        "heading" : "Descriptive Statistics",
+        "list": ["Introduction statistics","Overview","Data Presentation","Data Characteristics: Descriptive Summary Statistics"]
+    },{
+        "heading" : "Categorical data Analysis",
+        "list": ["Introductions","Procedures","Cross tabulations","Frequencies from one way frequencies to N way frequencies"]
+    },{
+        "heading" : " Hypothesis Testing",
+        "list": ["T-Test : Testing differences between two means","Random assignment of subjects","Two independent samples : Distribution free tests","One-tailed vs. two tailed tests","Paired t-tests(related samples)"]
+    },{
+        "heading" : " Hypothesis Testing (More than two groups)",
+        "list": ["One-way analysis of variance","Analysis of variance : two independent variables","Interpreting significant interactions","Unbalanced designs: Proc GLM"]
+    },{
+        "heading" : " Regression Analysis ",
+        "list": ["Introduction","Simple regression","Multiple regression analysis","Interpretation about statistics such as (R square, adjusted R square, etc…..) "]
+    },{
+        "heading" : "Correlation Analysis",
+        "list": ["Introduction","Positive correlation","Negative correlation","Multiple correlation","Linear and non-linear correlation  "]
+    },{
+        "heading" : "SAS Macros",
+        "list": ["Introduction","Creating macro variables","Reusing macro variable","Working with system defined macro variables and user defined macro variables","Converting Global macro variables into local macro variables vice versa","Functions and routines, its different","Introduction to Macro Processing","Defining and Calling Macros","How the Macro Processor Compiles a Macro Definition","How the Macro Processor Executes a Compiled Macro","Summary of Macro Processing","System defined macro options","Creating macro and Reusing macro","Executing a macro program","Passing values to a macro program through macro parameters","Using SAS Base functions and Proc SQL statements in SAS macros","Using conditional statements in macros","Manipulating SAS Base programs to macros","Macro quoting functions","Macro facility error messages and debugging","Using the stored compiled macro facility for saving macro","Arithmetic and logical expressions","Reading external files using macros","Writing SAS files using macros","Stepwise method for writing macro programs","Saving Macros in an Auto call Library","Saving Macros Using the Stored Compiled Macro Facility "]
+    },{
+        "heading" : "SAS SQL ",
+        "list": ["Introduction to the SQL Procedure","What Is SQL?","What Is the SQL Procedure?","Comparing PROC SQL with the SAS DATA Step","Creating data sets using SQL procedure","Overview of the query window","Retrieving Data from a Single Table","Retrieving Data from Multiple Tables","Creating and Updating Tables and Views","Inserting Rows into Tables","Updating Data Values in a Table","Deleting Rows and Tables","Altering Columns","Creating an Index","Using SQL Procedure Tables in SAS Software","Creating and Using Integrity Constraints in a Table","Using PROC SQL Options to Create and Debug Queries","Improving Query PerformanceHYPERLINK \"a001385596.htm\"Accessing SAS System Information Using DICTIONARY Tables","Using the Output Delivery System (ODS) with PROC SQL","Performing simple queries","Combine tables using inner join, outer join(outer left join, outer right join, outer full join)","Summarizing groups of data","Sub setting groups of data","Handling missing values","Handling embedded blanks in column names","Using SAS base functions in SQL","Building calculated columns","Reading oracle data tables into SAS by pass through facility","Connecting to Oracle, DB2, SYBASE, EXCEL, ACCESS, ODBC, OSIRIS, REMOTE, SPDE, SPSS, TERADATA, XML, AND XPORT engines etc…. to import data sets","Explaining about conditional statements","Modifying variables using Base Options in SQL","Creating macro variables in SQL"]
+    },{
+        "heading" : "SAS Graphs ",
+        "list": ["Introduction","Drawing graphs by programming and menu driven","Using colors and images","Language Elements","SAS Data Sets","Using Engines with SAS/GRAPH Software","Running SAS/GRAPH Programs","Procedure Output and the Graphics Output Area","Printing Graphics Output","Storing Graphics Output in SAS Catalogs","Modifying SAS/GRAPH Output","Transporting and Converting Graphics Output","Using SAS/GRAPH Colors and Images","Specifying Colors in SAS/GRAPH Programs","Specifying Images in SAS/GRAPH Programs","GChart","GPlot","Vbar","Hbar","Block bar","Star chart","Pie chart","Histogram","Box plot","Probability plot","Scatter plot (two dimensional and three dimensional)","Surface plot "]
+    },{
+        "heading" : "SAS ODS",
+        "list": ["Creating HTML outputs Using ODS","Creating HTML outputs with a Table of Contents","Selecting ODS tables for Display","Excluding ODS tables for Display","Exporting SAS outputs","Preparing PDF,RTF,CSV,XML,HTML files using ODS","Creating an output data set from an ODS tables","Generating outputs in colors","Creating an output data set from sub setting the data","Determining the Names of ODS Tables","Using the TEMPLATE Procedure to Customize Output","Creating HTML Output, Linked Within a Single Analysis","Creating HTML Output, Linked Between Analyses "]
     }],
     "Case Study": [{
       "heading": "Coming Soon",

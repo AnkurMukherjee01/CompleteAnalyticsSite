@@ -1,10 +1,7 @@
 {
     "Course Outline" : [{
-        "heading" : "Introduction to R",
-        "list": ["Introduction to R – History, Windows of  R, Application, Why R?, compared with other software.", "Data Structures in R – Vector, List, Matrix & Data Frame.", "R Workspace", "Packages in R – What is Package, How to install package, How to use?", "Reading, writing a dataset", "First steps with a dataset – head, tail, summary, class, list, ls()", "Working on case study", "Discussion of case study and understand optimal way of writing code."]
-    },{
-        "heading" : "Data Manipulation in R",
-        "list": ["Adding new columns", "Deleting columns", "Functions", "Indexing" ,"Subsetting Data", "Control Structures", "Merge", "Reshape", "Dplyr package- Select, Filter, mutate, summarize etc.,", "Pipeline function", "Usage of SQLDF package", "Working on case Study"]
+        "heading" : "Coming Soon",
+        "list": ["Coming Soon"]
     }],
     "Case Study": [{
       "heading": "Coming Soon",

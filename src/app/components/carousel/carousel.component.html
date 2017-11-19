@@ -5,7 +5,7 @@
     <div class="content">
       <span class="contentHeader">{{data.contentHeader}}</span>
       <span class="contentDetail" *ngIf="data.content != ''">{{data.content}}</span>
-      <button class="btn btn-cta" *ngIf="data.button">{{data.buttonName}}<span [class]="data.buttonIcon"></span></button>
+      <button class="btn btn-cta" *ngIf="data.button" (click)="ctaBtnClicked(data.buttonId)">{{data.buttonName}}<span [class]="data.buttonIcon"></span></button>
     </div>
   </ngu-item>
 
@@ -18,3 +18,4 @@
       <span class="sr-only">Next</span>
   </button>
 </ngu-carousel>
+<contact-popup #contactPopup></contact-popup>

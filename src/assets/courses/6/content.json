@@ -1,10 +1,37 @@
 {
     "Course Outline" : [{
-        "heading" : "Introduction to R",
-        "list": ["Introduction to R – History, Windows of  R, Application, Why R?, compared with other software.", "Data Structures in R – Vector, List, Matrix & Data Frame.", "R Workspace", "Packages in R – What is Package, How to install package, How to use?", "Reading, writing a dataset", "First steps with a dataset – head, tail, summary, class, list, ls()", "Working on case study", "Discussion of case study and understand optimal way of writing code."]
+        "heading" : "Introduction and Overview",
+        "list": ["Why Tableau? Why Visualization? ","Level Setting – Terminology ","Getting Started – creating some powerful visualizations quickly ","The Tableau Product Line ","Things you should know about Tableau"]
     },{
-        "heading" : "Data Manipulation in R",
-        "list": ["Adding new columns", "Deleting columns", "Functions", "Indexing" ,"Subsetting Data", "Control Structures", "Merge", "Reshape", "Dplyr package- Select, Filter, mutate, summarize etc.,", "Pipeline function", "Usage of SQLDF package", "Working on case Study"]
+        "heading" : "Getting Started",
+        "list": ["Connecting to Data and introduction to data source concepts  Working with data files  versus database servers ","Understanding the Tableau workspace","Dimensions and Measures","Using Show Me! ","Tour of Shelves (How shelves and marks work) ","Building Basic Views ","Help Menu and Samples ","Saving and Sharing your work"]
+    },{
+        "heading" : "Concepts and Options when Connecting to Data",
+        "list": ["Overview of other connection options ","Joining multiple tables ","Data Blending ","Copy and Paste ","Data Extracts ","Custom SQL ","Publishing and Re-using Data Connections ","Understand how to deal with data changes in your data source such as field addition, ","deletion or name change ","Re-using and sharing data connections – the concept of meta data","Working with multiple connections in the same workbook"]
+    },{
+        "heading" : "Analysis",
+        "list": ["Creating Views","Marks","Size and Transparency ","Highlighting",{"listHeader":"Working with Dates ","sublist":["Date aggregations and date parts","Discrete versus Continuous"]},"Dual Axis / Multiple Measures","Combo Charts with different mark types","Geographic Map","Page Trails","Heat Map","Density Chart","Scatter Plots","Pie Charts and Bar Charts","Small Multiples","Working with aggregate versus disaggregate data"]
+    },{
+        "heading" : "Analyzing",
+        "list": ["Sorting & Grouping","Aliases","Filtering and Quick Filters","Cross-Tabs (Pivot Tables)","Totals and Subtotals","Drilling and Drill Through","Aggregation and Disaggregation","Percent of Total","Working with Statistics and","Forecasting"]
+    },{
+        "heading" : "Getting Started with Calculated Fields",
+        "list": ["Working with String Functions","Basic Arithmetic Calculation","Date Math","Working with Totals","Custom Aggregations","Logic Statements","Parameter","Groups","Bins "]
+    },{
+        "heading" : "Formatting",
+        "list": ["Options in Formatting your Visualization","Working with Labels and Annotations","Effective Use of Titles and Captions","Introduction to Visual Best Practices"]
+    },{
+        "heading" : "Building Interactive Dashboards",
+        "list": ["Combining multiple visualizations into a dashboard","Making your worksheet interactive by using actions and filters","An Introduction to Best Practices in Visualization"]
+    },{
+        "heading" : "Sharing Workbooks",
+        "list": [" Publish to Reader","Packaged Workbooks","Publish to Office","Publish to PDF","Publish to Tableau Server and Sharing over the Web"]
+    },{
+        "heading" : "Putting it all together",
+        "list": ["Scenario-based Review Exercises","Best Practices"]
+    },{
+        "heading" : "Where to get Further Assistance",
+        "list": ["The Help File / Product Manual","Knowledge base","Forums","Whitepapers & Books","Technical Support"]
     }],
     "Case Study": [{
       "heading": "Coming Soon",

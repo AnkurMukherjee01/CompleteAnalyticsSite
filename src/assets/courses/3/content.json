@@ -1,10 +1,79 @@
 {
     "Course Outline" : [{
-        "heading" : "Introduction to R",
-        "list": ["Introduction to R – History, Windows of  R, Application, Why R?, compared with other software.", "Data Structures in R – Vector, List, Matrix & Data Frame.", "R Workspace", "Packages in R – What is Package, How to install package, How to use?", "Reading, writing a dataset", "First steps with a dataset – head, tail, summary, class, list, ls()", "Working on case study", "Discussion of case study and understand optimal way of writing code."]
+        "heading" : "INTRODUCTION TO PYTHON",
+        "list": ["Windows installation","Linux installation","Difference between Python/R","Data Structure","Architecture "]
     },{
-        "heading" : "Data Manipulation in R",
-        "list": ["Adding new columns", "Deleting columns", "Functions", "Indexing" ,"Subsetting Data", "Control Structures", "Merge", "Reshape", "Dplyr package- Select, Filter, mutate, summarize etc.,", "Pipeline function", "Usage of SQLDF package", "Working on case Study"]
+        "heading" : "Functions",
+        "list": ["Index","Find","Lower","Isdigit","Replace","Strip","Lstrip","Rstrip","Split","Startswith","Endswith "]
+    },{
+        "heading" : "Formatting string",
+        "list": []
+    },{
+        "heading" : "Complex data types ",
+        "list": [{"listHeader":"Lists","sublist":["Append o Pop() o extend o insert o remove o len o for loop o range"]},"Boolean operators","Tuples","Dictionaries","mapping objects or associative arrays "]
+    },{
+        "heading" : "INTRODUCTION TO NUMPY AND PANDAS LIBRARY",
+        "list": ["convert series into a dictionary","convert dictionary into a series","passing indices from a list","check for null values","check for non","null values ","lines up by index and performs operation","naming a series","name the index "]
+    },{
+        "heading" : "Data frames ",
+        "list": ["copying the first few lines (including header) from the table on the webpage","columns","Rank","Head()/tail() "]
+    },{
+        "heading" : "Index objects, Reindexing, Index hierarchy ",
+        "list": []
+    },{
+        "heading" : "Dropping entries, Selecting entries ",
+        "list": []
+    },{
+        "heading" : "Data alignment, Ranking and sorting ",
+        "list": []
+    },{
+        "heading" : "Missing data ",
+        "list": []
+    },{
+        "heading" : "Reading and writing text files ",
+        "list": ["Reading csv file","Reading txt file","Options in reading the files "]
+    },{
+        "heading" : " Merging ",
+        "list": ["Many","to","many merge","Merging with multiple keys","Merge on index "]
+    },{
+        "heading" : "Concatenate",
+        "list": ["Concatenate with numpy","Concatenate with pandas"]
+    },{
+        "heading" : "Combining data ",
+        "list": []
+    },{
+        "heading" : "Reshaping data frames and Pivoting",
+        "list": []
+    },{
+        "heading" : "Duplicates in data frames ",
+        "list": []
+    },{
+        "heading" : "Mapping",
+        "list": []
+    },{
+        "heading" : "Replacing values",
+        "list": []
+    },{
+        "heading" : "Renaming indices ",
+        "list": []
+    },{
+        "heading" : "Binning",
+        "list": []
+    },{
+        "heading" : "Outliers ",
+        "list": []
+    },{
+        "heading" : "GroupBy on data frames, Series and Dictionaries ",
+        "list": []
+    },{
+        "heading" : "Data aggregation/ Data summarization ",
+        "list": []
+    },{
+        "heading" : "Split, apply, combine ",
+        "list": []
+    },{
+        "heading" : "Visualisation using matplotlib and seaborn ",
+        "list": ["Histograms and joint plots","Kernel density estimation (KDE) plots","Combining plot styles","Box and violin plots","Heatmaps","Regression plots "]
     }],
     "Case Study": [{
       "heading": "Coming Soon",

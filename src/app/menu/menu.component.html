@@ -9,7 +9,10 @@
     </div>
     
     <div class="brand-centered">
-      <a class="navbar-brand"><img src="http://via.placeholder.com/100X50/6AD886/000000" alt="Dispute Bills"></a>
+      <a class="navbar-brand">
+        <span class="brandText">Complete Analytics</span>
+        <!-- <img src="assets/images/completeAnalytics_horizontalLogo.png" alt="CompleteAnalytics"> -->
+      </a>
     </div>
     
     <div class="navbar-collapse collapse" [class.show]="show">
@@ -21,7 +24,7 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a [routerLink]="['/corporate-training']" [routerLinkActive]="['active']" (click)="closeMenu()">Corporate Training</a></li>
-        <li><a [routerLink]="['/employer']" [routerLinkActive]="['active']" (click)="closeMenu()">Employer</a></li>
+        <li><a [routerLink]="['/employer']" [routerLinkActive]="['active']" (click)="closeMenu()">Hire</a></li>
         <li><a [routerLink]="['/become-instructor']" [routerLinkActive]="['active']" (click)="closeMenu()">Become an Instructor</a></li>
       </ul>
     </div>

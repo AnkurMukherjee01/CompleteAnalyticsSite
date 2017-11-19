@@ -12,32 +12,17 @@
         <tabs (tabChangeEmitter)="tabChanged($event)" (downloadEvent)="downloadPDFBtn()">
           <tab tabTitle="Course Outline" tabIcon="th-list">
             <div  *ngIf="currentContent">
-              <div class="section" *ngFor="let section of currentContent">
-                <h3 class="sectionHeader">{{section.heading}}</h3>
-                <ul>
-                  <li *ngFor="let l of section.list">{{l}}</li>
-                </ul>
-              </div>
+              <course-section *ngFor="let section of currentContent" [sectionHeader]="section.heading" [sectionContent]="section.list"></course-section>
             </div>
           </tab>
           <tab tabTitle="Case Study" tabIcon="education">
             <div *ngIf="currentContent">
-              <div class="section" *ngFor="let section of currentContent">
-                <h3 class="sectionHeader">{{section.heading}}</h3>
-                <ul>
-                  <li *ngFor="let l of section.list">{{l}}</li>
-                </ul>
-              </div>
+                <course-section *ngFor="let section of currentContent" [sectionHeader]="section.heading" [sectionContent]="section.list"></course-section>
             </div>
           </tab>
           <tab tabTitle="Benefits" tabIcon="thumbs-up">
             <div *ngIf="currentContent">
-              <div class="section" *ngFor="let section of currentContent">
-                <h3 class="sectionHeader">{{section.heading}}</h3>
-                <ul>
-                  <li *ngFor="let l of section.list">{{l}}</li>
-                </ul>
-              </div>
+                <course-section *ngFor="let section of currentContent" [sectionHeader]="section.heading" [sectionContent]="section.list"></course-section>
             </div>
           </tab>
         </tabs>

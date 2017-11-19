@@ -1,0 +1,24 @@
+<div class="section" (click)="toggleSection()">
+  <div class="sectionHeader">
+    <span>{{sectionHeader}}</span>
+    <i *ngIf="sectionContent.length && !open" class="glyphicon glyphicon-plus"></i>
+    <i *ngIf="sectionContent.length && open" class="glyphicon glyphicon-minus"></i>
+  </div>
+  <div *ngIf="sectionContent.length" class="sectionContent">
+    <ul *ngIf="open">
+      <li *ngFor="let item of sectionContent">
+        <span *ngIf="!isSublist(item)">{{item}}</span>
+        <span *ngIf="isSublist(item)">{{item.listHeader}}</span>    
+        <ul *ngIf="isSublist(item)">
+          <li *ngFor="let sublist of item.sublist">
+            <span *ngIf="!isSublist(sublist)">{{sublist}}</span>
+            <span *ngIf="isSublist(sublist)">{{sublist.listHeader}}</span>    
+            <ul *ngIf="isSublist(sublist)">
+              <li *ngFor="let sList of sublist.sublist">{{sList}}</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>

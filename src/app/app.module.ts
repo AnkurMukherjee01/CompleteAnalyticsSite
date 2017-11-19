@@ -35,6 +35,8 @@ import { UtilService } from './services/util.service';
 import { CompaniesComponent } from './components/companies/companies.component';
 import {TabComponent, TabsComponent, OnTabDeselect, OnTabSelect} from './components/tab-component/index';
 import { TestimonyTileComponent } from './components/testimony-tile/testimony-tile.component';
+import { CourseSectionComponent } from './components/course-section/course-section.component';
+import { ContactPopupComponent } from './components/contact-popup/contact-popup.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +61,9 @@ import { TestimonyTileComponent } from './components/testimony-tile/testimony-ti
     CarouselComponent,
     CompaniesComponent,
     TabComponent, TabsComponent,
-    TestimonyTileComponent
+    TestimonyTileComponent,
+    CourseSectionComponent,
+    ContactPopupComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'my-app' }),
