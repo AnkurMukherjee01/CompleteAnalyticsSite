@@ -26,9 +26,11 @@
             </div>
           </tab>
         </tabs>
-        <h2 class="contentHeader">Review for this course</h2>
-        <div class="courseReview">
-          <testimony-tile *ngFor="let data of reviewData" [data]="data"></testimony-tile>
+        <div *ngIf="reviewData && reviewData.length>0">
+          <h2 class="contentHeader">Review for this course</h2>
+          <div class="courseReview">
+            <testimony-tile *ngFor="let data of reviewData" [data]="data"></testimony-tile>
+          </div>
         </div>
       </div>
     <div class="followContent" *ngIf="course">
@@ -43,75 +45,12 @@
 
         </table>
         <br/><br/>
-        <button class="btn btn-join">Join</button>
+        <button (click)="joinButton()" class="btn btn-join">Join</button>
       </div>
     </div>
   </div>
 </div>
-
-<ng-template #templateRef let-dialogRef="dialogRef" let-ctx>
-  <div>
-      <div class="modal-header">
-          <button class="btn btn-primary" (click)="dialogRef.close(true)"><i class="glyphicon glyphicon-remove"></i></button>
-      </div>
-      <div class="modal-body">
-          <div class="employeeForm">
-              <form #employeeForm="ngForm" (ngSubmit)="onSubmit(employeeForm)">
-                  <div class="form-group">
-                    <label for="name">Name*</label>
-                    <input type="text" class="form-control" name="name" ngModel required #name="ngModel">
-                  </div>
-                  <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
-                    <div *ngIf="name.errors.required">
-                      Name is required.
-                    </div>
-                  </div>
-              
-                  <div class="form-group">
-                    <label for="email">Email*</label>
-                    <input type="email" class="form-control" name="email" email="true" ngModel #email="ngModel" required>
-                  </div>
-                  <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
-                    <div *ngIf="email.errors.required">
-                      Email is required.
-                    </div>
-                    <div *ngIf="email.errors.email">
-                      Please enter a valid email.
-                    </div>
-                  </div>
-          
-                  <div class="form-group">
-                      <label for="name">Phone No</label>
-                      <input type="text" class="form-control" name="phoneNo" ngModel>
-                  </div>
-                  
-          
-                  <div class="form-group">
-                      <label for="name">Subject*</label>
-                      <input type="text" class="form-control" name="subject" ngModel #subject="ngModel" required>
-                  </div>
-                  <div *ngIf="subject.invalid && (subject.dirty || subject.touched)" class="alert alert-danger">
-                    <div *ngIf="subject.errors.required">
-                       Subject is required.
-                    </div>
-                  </div>
-          
-                  <div class="form-group">
-                      <label for="name">Message*</label>
-                      <textarea style="resize:none" class="form-control" rows="3" name="message" ngModel #message="ngModel" required></textarea>
-                  </div>
-                  <div *ngIf="message.invalid && (message.dirty || message.touched)" class="alert alert-danger">
-                    <div *ngIf="message.errors.required">
-                      Message is required.
-                    </div>
-                  </div>
-          
-                  <re-captcha style="width:100%" #captchaRef="reCaptcha" (resolved)="resolved($event)" siteKey="6Lc3NTcUAAAAAEbbUbuzavH2Gni0yYJ0Fsvs1HbE" required></re-captcha>
-              
-                  <button type="submit" [disabled]="!recaptchaDone || employeeForm.invalid" class="btn btn-success">Send</button>
-              
-              </form>
-            </div>
-      </div>
-  </div>
-</ng-template>
+<div *ngIf="course">
+  <contact-popup #downloadPopup type="download_PDF" [courseName]="course.name"></contact-popup>
+  <contact-popup #joinPopup type="join_course" [courseName]="course.name"></contact-popup>
+</div>

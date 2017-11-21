@@ -5,6 +5,7 @@
     }
     tabs .pane{
         background-color: $color-light;
+        min-height: 400px;
     }
     tabs>ul{
         width: 100%;

@@ -1,148 +1,132 @@
 {
     "homePage": [{
-        "name": "John Doe",
+        "name": "Debayani Chakraborty",
+        "rating": 5,
+        "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth..."
+    },{
+        "name": "Khan, Nizamuddin",
+        "rating": 5,
+        "textContent": "Complete analytics provides the most in depth, most well researched and intense predictive analytics course using R. The course content is also very easy to understand and follow, for both freshers and experienced individuals. The course design is very contemporary and industry aligned... the students do not have to worry about, if they are learning the skills that are in demand in market today and aligned to job requirements - THE COURSE TAKES CARE OF ALL JOB AND SKILL SET NEEDS.Most importantly, the course is taught by a instructor,Mr.Ravi H S who is very well versed in predicitive analytics concepts and fundamentals, the instructor is a predictive analytics veteran with more than a decade of industry experience in analytics field.The instructor is very patient with the students and explain all the concepts from fundamentals and fills it up with industry examples and use cases that makes it very easy to understand, grasp and process for the students.and look forward to the next class. I WOULD RECOMMEND complete analytics to each and every aspiring individual that wants to get in the field of analytics and either has or does not have any prior experience. Kudos to the complete analytics team for the splendid effort."
+    },{
+        "name": "sachin H",
+        "rating": 5,
+        "textContent": "A Perfect place to learn Analytics (Data Science). Trainer has huge real-time experience and gets into detail for each topic. Students will get opportunity to present and demonstrate on advanced and trending topic which is not in listed topics .Trainer guides students on these new topics for demonstration. This is additional learning :)   Complete Analytics Team , you are doing awesome. Keep it up."
+    },{
+        "name": "Ankit Jha",
+        "rating": 5,
+        "textContent": "Overall nice learning environment with good support from Ravi Sir . Good institute to start learning about data  analytics"
+    },{
+        "name": "Shaivee Sharma",
+        "rating": 5,
+        "textContent": "Have tried covering all the possible aspects in Excel. Faculty dedicated towards helping the student with rehearsed and practical usage of every function. Teaching methodologies are concerned with continuously helping the student out and getting cleared with the doubts coming in the way. Have helped in gaining command over the tool in a quite efficient manner"
+    },{
+        "name": "Nithin Reddy",
+        "rating": 5,
+        "textContent": "My journeys with Complete Analytics have been thoroughly engaging, fascinating and satisfying. R course contents have been well researched and of high quality. I found the case studies to be especially thought provoking leading to hands-on learning. The course is right on target in teaching us how to think like a statistician in handling various types of data. The courses aptly cover the best industry practices to tackle various analytical problems. The assignments and tests all aid in the learning. I feel I have attained comprehensive knowledge and experience to give me a jump start in my career as a data analyst."
+    },{
+        "name": "theja vr",
+        "rating": 5,
+        "textContent": "Very well structured classes. Close concentration on every student is the most important plus point. Every concept is explained very well. Both the tutors are extremely knowledgeable with vast corporate analytics experience....and I strongly suggest beginners to enroll into this institute and expand your analytical skills."
+    },{
+        "name": "Arindam Panda",
+        "rating": 5,
+        "textContent": "I joined for the SAS course without any prior knowledge of SAS or programming. Now after one and half month I am much confident about SAS and I can say I learn well here. Thanks to Gouda sir for taking each of the classes with patience and also explaining concepts many times and giving us real project assignments. Looking forward to join the predictive modelling course in Jan end too. If you want to learn from scratch this is absolutely the right place! Also i recently finished R and stat course from the very same institute and i think this course is going to be very beneficial in my future career. Thanks Ravi sir for that. Wonderful teachings covering all chapters!"
+    },{
+        "name": "Naveen Krishi",
+        "rating": 5,
+        "textContent": "Really the trainers are dedicated and giving the hands on training which will really help us to use the acquired skills in the main stream ..and also the fees are very less compare to other institutes."
+    },{
+        "name": "svidyadhar hegde",
+        "rating": 5,
+        "textContent": "It's a very good institution. As the name says, it gives the complete knowledge about the course. Really a good institution."
+    },{
+        "name": "Pavithra Krishna",
+        "rating": 5,
+        "textContent": "Had a wonderful learning experience and I thank the trainer for teaching us soo well. I was illiterate about the SAS tool but now I am very much confident about it. The trainers are so supportive and concentrate on each and everyone. overall very experienced tutors and I suggest beginners who are interested in analytics field to enroll to this institute."
+    },{
+        "name": "Soumyajit Das",
+        "rating": 5,
+        "textContent": "I have done the Base/Advanced SAS module with Complete Analytics . I believe that they are the best when it comes to giving you an in-depth view of the subject. They also assist you in getting your SAS certification cleared - something that helps you get into the analytics industry, especially if you are fresher. I would recommend Complete Analytics to any one wanting to get an introduction to the world of analytics."
+    },{
+        "name": "Debasmita SinhaRoy",
         "rating": 4,
-        "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience."
+        "textContent": "I have completed the Predictive Modelling course from Complete Analytics. It was a very useful for me.From my master's background, I have worked on certain statistical concepts but this course helped me to refresh my statistical knowledge and also gave me practical exposure  to tools. Apart from that I also learned some new techniques which were very helpful and useful for my growth in the analytic field. "
     },{
-        "name": "John Doe",
-        "rating": 5,
-        "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth..."
-    },{
-        "name": "John Doe",
-        "rating": 5,
-        "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth...Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth...Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth...Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth..."
-    },{
-        "name": "James Bond",
-        "rating": 5,
-        "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth..."
-    },{
-        "name": "John Doe",
-        "rating": 3,
-        "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth..."
-    },{
-        "name": "John Doe",
+        "name": "Jagadish Kumar",
         "rating": 4,
-        "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth..."
+        "textContent": "I have learned Base SAS , Advanced SAS and Predictive Modelling courses in this institute, where the corporate professionals will provide training using live market scenario examples, where i got good job now. thanks for the compelte analytics"
+    },{
+        "name": "venkata ravi kiran ravada",
+        "rating": 5,
+        "textContent": "It was a nice learning experience. The Predictive Modeling course is structured in a way that it matches the industry standards and expectations. This course is really helpful for pursuing career in Analytics and Modeling which is a fast growing field. Very much preffered for people who want to see their future in Statistics/Ecnometrics/Modeling  and Analytics."
+    },{
+        "name": "Bhanu Kumar Nallam",
+        "rating": 5,
+        "textContent": "My search for VBA training institute was ended up with Complete Analytics. I have joined for advanced excel with VBA. The training session are really good and interactive and I strongly recommend to any one who has quest to learn VBA and advanced Excel."
     }],
     "courses": [{
         "id": 1,
+        "name": "Data science-Predictive Modeling with R",
         "reviews": [{
-            "name": "John Doe",
-            "rating": 4,
-            "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience."
-        },{
-            "name": "John Doe",
+            "name": "Khan, Nizamuddin",
             "rating": 5,
-            "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth..."
+            "textContent": "Complete analytics provides the most in depth, most well researched and intense predictive analytics course using R. The course content is also very easy to understand and follow, for both freshers and experienced individuals. The course design is very contemporary and industry aligned... the students do not have to worry about, if they are learning the skills that are in demand in market today and aligned to job requirements - THE COURSE TAKES CARE OF ALL JOB AND SKILL SET NEEDS.Most importantly, the course is taught by a instructor,Mr.Ravi H S who is very well versed in predicitive analytics concepts and fundamentals, the instructor is a predictive analytics veteran with more than a decade of industry experience in analytics field.The instructor is very patient with the students and explain all the concepts from fundamentals and fills it up with industry examples and use cases that makes it very easy to understand, grasp and process for the students.and look forward to the next class. I WOULD RECOMMEND complete analytics to each and every aspiring individual that wants to get in the field of analytics and either has or does not have any prior experience. Kudos to the complete analytics team for the splendid effort."
         },{
-            "name": "John Doe",
+            "name": "venkata ravi kiran ravada",
             "rating": 5,
-            "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth...Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth...Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth...Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth..."
+            "textContent": "It was a nice learning experience. The Predictive Modeling course is structured in a way that it matches the industry standards and expectations. This course is really helpful for pursuing career in Analytics and Modeling which is a fast growing field. Very much preffered for people who want to see their future in Statistics/Ecnometrics/Modeling  and Analytics."
+        },{
+            "name": "sachin H",
+            "rating": 5,
+            "textContent": "A Perfect place to learn Analytics (Data Science). Trainer has huge real-time experience and gets into detail for each topic. Students will get opportunity to present and demonstrate on advanced and trending topic which is not in listed topics .Trainer guides students on these new topics for demonstration. This is additional learning :)   Complete Analytics Team , you are doing awesome. Keep it up."
         }]
     },{
         "id": 2,
+        "name": "SAS base and advance",
         "reviews": [{
-            "name": "John Doe",
-            "rating": 4,
-            "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience."
+            "name": "Arindam Panda",
+            "rating": 5,
+            "textContent": "I joined for the SAS course without any prior knowledge of SAS or programming. Now after one and half month I am much confident about SAS and I can say I learn well here. Thanks to Gouda sir for taking each of the classes with patience and also explaining concepts many times and giving us real project assignments. Looking forward to join the predictive modelling course in Jan end too. If you want to learn from scratch this is absolutely the right place! Also i recently finished R and stat course from the very same institute and i think this course is going to be very beneficial in my future career. Thanks Ravi sir for that. Wonderful teachings covering all chapters!"
         },{
-            "name": "John Doe",
+            "name": "Debayani Chakraborty",
             "rating": 5,
             "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth..."
         },{
-            "name": "John Doe",
+            "name": "Pavithra Krishna",
             "rating": 5,
-            "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth...Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth...Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth...Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth..."
+            "textContent": "Had a wonderful learning experience and I thank the trainer for teaching us soo well. I was illiterate about the SAS tool but now I am very much confident about it. The trainers are so supportive and concentrate on each and everyone. overall very experienced tutors and I suggest beginners who are interested in analytics field to enroll to this institute."
         }]
     },{
         "id": 3,
-        "reviews": [{
-            "name": "John Doe",
-            "rating": 4,
-            "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience."
-        },{
-            "name": "John Doe",
-            "rating": 5,
-            "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth..."
-        },{
-            "name": "John Doe",
-            "rating": 5,
-            "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth...Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth...Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth...Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth..."
-        }]
+        "name": "Python for Data Science",
+        "reviews": []
     },{
         "id": 4,
-        "reviews": [{
-            "name": "John Doe",
-            "rating": 4,
-            "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience."
-        },{
-            "name": "John Doe",
-            "rating": 5,
-            "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth..."
-        },{
-            "name": "John Doe",
-            "rating": 5,
-            "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth...Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth...Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth...Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth..."
-        }]
+        "name": "R for Data Science",
+        "reviews": []
     },{
         "id": 5,
-        "reviews": [{
-            "name": "John Doe",
-            "rating": 4,
-            "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience."
-        },{
-            "name": "John Doe",
-            "rating": 5,
-            "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth..."
-        },{
-            "name": "John Doe",
-            "rating": 5,
-            "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth...Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth...Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth...Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth..."
-        }]
+        "name": "Machine learning by using R",
+        "reviews": []
     },{
         "id": 6,
-        "reviews": [{
-            "name": "John Doe",
-            "rating": 4,
-            "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience."
-        },{
-            "name": "John Doe",
-            "rating": 5,
-            "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth..."
-        },{
-            "name": "John Doe",
-            "rating": 5,
-            "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth...Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth...Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth...Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth..."
-        }]
+        "name": "Data visilization by using Tableau",
+        "reviews": []
     },{
         "id": 7,
+        "name": "Advance Excel for Data analytics",
         "reviews": [{
-            "name": "John Doe",
-            "rating": 4,
-            "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience."
-        },{
-            "name": "John Doe",
+            "name": "Shaivee Sharma",
             "rating": 5,
-            "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth..."
-        },{
-            "name": "John Doe",
-            "rating": 5,
-            "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth...Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth...Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth...Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth..."
+            "textContent": "Have tried covering all the possible aspects in Excel. Faculty dedicated towards helping the student with rehearsed and practical usage of every function. Teaching methodologies are concerned with continuously helping the student out and getting cleared with the doubts coming in the way. Have helped in gaining command over the tool in a quite efficient manner"
         }]
     },{
         "id": 8,
+        "name": "Excel VBA (MACRO)",
         "reviews": [{
-            "name": "John Doe",
-            "rating": 4,
-            "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience."
-        },{
-            "name": "John Doe",
+            "name": "Bhanu Kumar Nallam",
             "rating": 5,
-            "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth..."
-        },{
-            "name": "John Doe",
-            "rating": 5,
-            "textContent": "Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth...Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth...Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth...Good experience in learning.  The entire group of the tutorial was very motivating and are having good knowledge and experience .  There is a healthy atmosphere for learning.  The training for SAS was really worth that helped me to get  global certification and it is useful for better career..  Apart from the training students are provided with good study materials and guidance. Thus the training is really worth..."
+            "textContent": "My search for VBA training institute was ended up with Complete Analytics. I have joined for advanced excel with VBA. The training session are really good and interactive and I strongly recommend to any one who has quest to learn VBA and advanced Excel."
         }]
     }] 
 }

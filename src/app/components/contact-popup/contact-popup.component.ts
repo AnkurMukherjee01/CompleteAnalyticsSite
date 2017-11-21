@@ -1,5 +1,5 @@
 import { ContactService } from './../../services/contact.service';
-import { Component, OnInit, ViewChild, TemplateRef } from '@angular/core';
+import { Component, OnInit, ViewChild, TemplateRef, Input } from '@angular/core';
 import { Overlay, overlayConfigFactory} from 'ngx-modialog';
 import { Modal, BSModalContext } from 'ngx-modialog/plugins/bootstrap';
 
@@ -10,7 +10,8 @@ import { Modal, BSModalContext } from 'ngx-modialog/plugins/bootstrap';
 })
 export class ContactPopupComponent implements OnInit {
 
-
+  @Input() type;
+  @Input() courseName;
   recaptchaDone = false;
   dialogRef;
   @ViewChild('templateRef') public templateRef: TemplateRef<any>;
@@ -28,7 +29,10 @@ export class ContactPopupComponent implements OnInit {
 
   onSubmit(form){
     var dataToSend = form.value;
-    dataToSend.type = 'Schedule Demo';
+    dataToSend.type = this.type;
+    if(this.courseName){
+      dataToSend.courseName = this.courseName;
+    }
     this.contactService.postMessageData(dataToSend).subscribe((res) => {
       if(res.status == 200){
         form.reset();

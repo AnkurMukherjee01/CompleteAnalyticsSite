@@ -20,11 +20,9 @@ export class CourseDetailPageComponent implements OnInit {
   currentTab: string;
   currentContent: any;
   reviewData;
-  recaptchaDone = false;
-  dialogRef;
 
-  @ViewChild('templateRef') public templateRef: TemplateRef<any>;
-  @ViewChild('captchaRef') recaptcha;
+  @ViewChild('downloadPopup') downloadPopup;
+  @ViewChild('joinPopup') joinPopup;
   constructor(private route: ActivatedRoute, private courseSevice: CourseServiceService, private fileDownload: FileDownloadService, private utilService: UtilService,public modal: Modal, private contactService: ContactService) {   }
   
   ngOnInit() {
@@ -55,25 +53,25 @@ export class CourseDetailPageComponent implements OnInit {
     }
   }
 
-  resolved(ev){
-    this.recaptchaDone = true;
-  }
+  // resolved(ev){
+  //   this.recaptchaDone = true;
+  // }
 
-  onSubmit(form){
-    var dataToSend = form.value;
-    dataToSend.type = 'download PDF';
-    dataToSend.courseName = this.course.name;
-    this.contactService.postMessageData(dataToSend).subscribe((res) => {
-      if(res.status == 200){
-        form.reset();
-        this.recaptcha.reset();
-        this.dialogRef.close(true);
-        this.downloadPDF();
-      }
-    }, (err) => {
-      alert("Message not sent. Please try again");
-    })
-  }
+  // onSubmit(form){
+  //   var dataToSend = form.value;
+  //   dataToSend.type = 'download PDF';
+  //   dataToSend.courseName = this.course.name;
+  //   this.contactService.postMessageData(dataToSend).subscribe((res) => {
+  //     if(res.status == 200){
+  //       form.reset();
+  //       this.recaptcha.reset();
+  //       this.dialogRef.close(true);
+  //       this.downloadPDF();
+  //     }
+  //   }, (err) => {
+  //     alert("Message not sent. Please try again");
+  //   })
+  // }
 
   downloadPDF(){
     let downloadUrl = 'assets/courses/' + this.course.id + '/course_content.pdf';
@@ -81,11 +79,10 @@ export class CourseDetailPageComponent implements OnInit {
   }
 
   downloadPDFBtn(){
-    this.modal
-    .open(this.templateRef, overlayConfigFactory({ isBlocking: true }, BSModalContext))
-    .then( dialog => {
-      this.dialogRef = dialog;
-    })
+    this.downloadPopup.openPopup();
   }
 
+  joinButton(){
+    this.joinPopup.openPopup();
+  }
 }

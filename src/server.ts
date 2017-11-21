@@ -74,8 +74,11 @@ app.post('/api/message', (req, res) => {
     case 'instructor':
       mailSubject = 'Instructor Message from Website';
       break;
-    case 'download PDF':
+    case 'download_PDF':
       mailSubject = 'Downloaded PDF from Website';
+      break;
+    case 'join_course':
+      mailSubject = 'Join Course Message';
       break;
     default:
       mailSubject = 'Message from Website';
