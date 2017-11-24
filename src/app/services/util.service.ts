@@ -35,6 +35,11 @@ export class UtilService {
       .map((res) => res.reviews)
   }
 
+  getRecentBatches(){
+    return this.http.get(this.basePath + 'assets/upcomingBatches.json')
+      .map((res) => res.json())
+  }
+
   showContactPopup(){
     
   }

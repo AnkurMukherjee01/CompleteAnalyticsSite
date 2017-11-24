@@ -32,6 +32,8 @@
     border-bottom-right-radius: 10px;
     background-color: $color-gray;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 .userIcon{
     font-size: 4em;
@@ -41,10 +43,25 @@
     background-color: $color-gray;
     box-shadow: 1px 1px 5px rgba(0, 0, 0,0.6);
 }
+.testimonialContent div:first-child(){
+    flex-grow: 1;
+}
+.testimonialFooter{
+    padding: 10px;
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.testimonialFooter i{
+    font-size: 2.5em;
+    cursor: pointer;
+    color: #337ab7;
+}
 .btnMore{
-    width: 100%;
     background-color: $color-lightbg;
     font-weight: bold;
+    width: 50%;
 }
 
 star-rating{

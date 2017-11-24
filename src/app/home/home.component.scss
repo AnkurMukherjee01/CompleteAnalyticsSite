@@ -5,9 +5,8 @@
   }
 }
 .homepage{
-  margin-top: 50px;
+  @include menuMarginTop;
   background: #eee;
-  
 }
 
 .coursel{

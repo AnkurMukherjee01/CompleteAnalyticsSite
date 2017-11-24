@@ -1,0 +1,17 @@
+[{
+    "courseId": 1,
+    "date" : "24/11/2017",
+    "time" : "2-5 PM"
+},{
+    "courseId": 2,
+    "date" : "2/12/2017",
+    "time" : "2-5 PM"
+},{
+    "courseId": 3,
+    "date" : "10/12/2017",
+    "time" : "2-5 PM"
+},{
+    "courseId": 4,
+    "date" : "19/12/2017",
+    "time" : "2-5 PM"
+}]

@@ -39,6 +39,7 @@ export class MenuComponent implements OnInit {
   
   toggleCollapse() {
     this.show = !this.show;
+    console.log(this.show);
   }
 
   closeMenu(){

@@ -54,7 +54,8 @@
 }
 
 .courseDetailPage{
-    margin-top: 50px;
+  @include menuMarginTop;
+    background: #ccc;
 }
 .allContent{
   display: flex;

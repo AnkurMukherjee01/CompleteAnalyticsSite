@@ -1,21 +1,30 @@
 <div class="corporateTrainingPage">
-    <div class="container formContainer">
-      <img class="banner" src="assets/images/corporateTraining.jpg">
+  <div class="formContainer">
+    <div class="pageHeader">
+      <h2>Corporate Training</h2>
+      <h4>This is dummy text which will be replaced by actual content</h4>
+    </div>  
+    <img src="assets/images/corporateTraining.jpg"/>
       <div class="corporateTrainingForm">
       <form #corporateTrainingForm="ngForm" (ngSubmit)="onSubmit(corporateTrainingForm)">
-          <div class="form-group">
-            <label for="name">Name*</label>
-            <input type="text" class="form-control" name="name" ngModel required #name="ngModel">
-          </div>
-          <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
-            <div *ngIf="name.errors.required">
-              Name is required.
+        <div class="row">
+          <div class="col col-md-12">
+            <div class="form-group">
+              <input type="text" placeholder="Name" class="form-control" name="name" ngModel required #name="ngModel">
+            </div>
+            <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+              <div *ngIf="name.errors.required">
+                Name is required.
+              </div>
             </div>
           </div>
-      
+        </div>
+        
+        <div class="row">
+          <div class="col col-md-6">
           <div class="form-group">
-            <label for="email">Email*</label>
-            <input type="email" class="form-control" name="email" email="true" ngModel #email="ngModel" required>
+            
+            <input type="email" placeholder="Email" class="form-control" name="email" email="true" ngModel #email="ngModel" required>
           </div>
           <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
             <div *ngIf="email.errors.required">
@@ -25,38 +34,44 @@
               Please enter a valid email.
             </div>
           </div>
-  
-          <div class="form-group">
-              <label for="name">Phone No</label>
-              <input type="text" class="form-control" name="phoneNo" ngModel>
           </div>
+          <div class="col col-md-6">
+            <div class="form-group">
+              <input type="text" placeholder="Phone No" class="form-control" name="phoneNo" ngModel>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-md-12">
+              <div class="form-group">
+                  <input type="text" placeholder="Subject" class="form-control" name="subject" ngModel #subject="ngModel" required>
+              </div>
+              <div *ngIf="subject.invalid && (subject.dirty || subject.touched)" class="alert alert-danger">
+                <div *ngIf="subject.errors.required">
+                  Subject is required.
+                </div>
+              </div>    
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col col-md-12">
+              <div class="form-group">
+                  <textarea style="resize:none" placeholder="Message" class="form-control" rows="3" name="message" ngModel #message="ngModel" required></textarea>
+              </div>
+              <div *ngIf="message.invalid && (message.dirty || message.touched)" class="alert alert-danger">
+                <div *ngIf="message.errors.required">
+                  Message is required.
+                </div>
+              </div>
+          </div>
+        </div>
           
-  
-          <div class="form-group">
-              <label for="name">Subject*</label>
-              <input type="text" class="form-control" name="subject" ngModel #subject="ngModel" required>
+          <div class="row">
+            <div class="col col-md-6"><re-captcha #captchaRef="reCaptcha" (resolved)="resolved($event)" siteKey="6Lc3NTcUAAAAAEbbUbuzavH2Gni0yYJ0Fsvs1HbE" required></re-captcha></div>
+            <div class="col col-md-6"><button type="submit" [disabled]="!recaptchaDone || corporateTrainingForm.invalid" class="btn btn-success">Send Message</button></div>
           </div>
-          <div *ngIf="subject.invalid && (subject.dirty || subject.touched)" class="alert alert-danger">
-            <div *ngIf="subject.errors.required">
-               Subject is required.
-            </div>
-          </div>
-  
-          <div class="form-group">
-              <label for="name">Message*</label>
-              <textarea style="resize:none" class="form-control" rows="3" name="message" ngModel #message="ngModel" required></textarea>
-          </div>
-          <div *ngIf="message.invalid && (message.dirty || message.touched)" class="alert alert-danger">
-            <div *ngIf="message.errors.required">
-              Message is required.
-            </div>
-          </div>
-  
-          <re-captcha #captchaRef="reCaptcha" (resolved)="resolved($event)" siteKey="6Lc3NTcUAAAAAEbbUbuzavH2Gni0yYJ0Fsvs1HbE" required></re-captcha>
-      
-          <button type="submit" [disabled]="!recaptchaDone || corporateTrainingForm.invalid" class="btn btn-success">Send</button>
-      
-      </form>
+        </form>
     </div>
   </div>
 </div>

@@ -1,11 +1,10 @@
 @import '~scss/variables.scss';
 
 .coursesPage{
-    background-color: #eee;
-    margin-top: 50px;
+    background: #ccc;
+    @include menuMarginTop;
 }
 
 .filterBox{
     margin: 20px;
-    
 }

@@ -8,9 +8,21 @@
     position: fixed;
     top: 0;
     width: 100%;
-    height: 50px;
+    @include menuHeight;
     z-index: 15;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contactInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #333;
+}
+.contactInfo div i{
+    margin-right: 3px;
+}
+.contactInfo a{
+    color: $color-light;
 }
 .navbar-header{
     height: 50px;
@@ -21,6 +33,7 @@
     background-color: $color-dark;
     margin-top: -1px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    display: block!important;
 }
 .navbar-brand {
   padding: 0px;
@@ -60,7 +73,7 @@
     visibility: visible;
     transform: scaleX(1);
 }
-.navbar-nav>li>a:hover, .navbar-nav>li>a.active{
+.navbar-nav>li>a:hover, .navbar-nav>li>a.active, .navbar-nav>li>a:focus{
     color: $color-lightbg;
     background-color: transparent;
 }
@@ -71,7 +84,7 @@
   position: absolute;
   width: 100%;
   left: 0;
-  top: 0;
+  top: 15px;
 }
 .brand-centered .navbar-brand {
   display: flex;
@@ -82,4 +95,71 @@
 }
 .navbar-toggle {
     z-index: 1;
+}
+.recentBatches{
+    position: fixed;
+    bottom: 0;
+    margin: 0px;
+    left: 10px;
+    padding: 10px;
+    background-color: $color-dark;
+    color: $color-lightbg;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 10;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.recentBatches a{
+    color: $color-lightbg;
+}
+.recentBatches a.active, .recentBatches a:focus,.recentBatches a:hover{
+    background-color: transparent;
+}
+@media (max-width: 500px){
+    .contactInfo{
+        display: none;
+    }
+    .brand-centered{
+        top: 0;
+    }
+    .navbar{
+        @include menuHeight;
+    }
+}
+
+@media (max-width: 1200px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
 }

@@ -1,0 +1,21 @@
+@import '~scss/variables.scss';
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.socialIcons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    a{
+        color: $color-dark;
+    }
+}
+.links{
+    ul {
+        list-style-type: none;   
+    }
+    a{
+        color: $color-dark;
+    }
+}

@@ -1,26 +1,33 @@
 <div class="contactPage">
-  <div class="container">
-    <div class="mainContactInfo">
-      <div><span class="glyphicon glyphicon-phone"></span><h4 style="display:inline-block"><b>+91 9886096090</b></h4></div>
-      <div><span class="glyphicon glyphicon-envelope"></span><h4 style="display:inline-block"><b><a href="mailto:info@completeanalytics.in">info@completeanalytics.in</a></b></h4></div>
+  
+  <div class="row">
+    <div class="col col-md-12">
+      <div class="pageHeader">
+        <h2>Contact Us</h2>
+      </div>
     </div>
   </div>
-  <div class="container contactContainer">
+  <div class="contactContainer">   
     <div class="contactForm">
     <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
-        <div class="form-group">
-          <label for="name">Name*</label>
-          <input type="text" class="form-control" name="name" ngModel required #name="ngModel">
-        </div>
-        <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
-          <div *ngIf="name.errors.required">
-            Name is required.
+      <div class="row">
+        <div class="col col-md-12">
+          <div class="form-group">
+            <input type="text" placeholder="Name" class="form-control" name="name" ngModel required #name="ngModel">
+          </div>
+          <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+            <div *ngIf="name.errors.required">
+              Name is required.
+            </div>
           </div>
         </div>
-    
+      </div>
+      
+      <div class="row">
+        <div class="col col-md-6">
         <div class="form-group">
-          <label for="email">Email*</label>
-          <input type="email" class="form-control" name="email" email="true" ngModel #email="ngModel" required>
+          
+          <input type="email" placeholder="Email" class="form-control" name="email" email="true" ngModel #email="ngModel" required>
         </div>
         <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
           <div *ngIf="email.errors.required">
@@ -30,51 +37,70 @@
             Please enter a valid email.
           </div>
         </div>
-
-        <div class="form-group">
-            <label for="name">Phone No</label>
-            <input type="text" class="form-control" name="phoneNo" ngModel>
         </div>
+        <div class="col col-md-6">
+          <div class="form-group">
+            <input type="text" placeholder="Phone No" class="form-control" name="phoneNo" ngModel>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-md-12">
+            <div class="form-group">
+                <input type="text" placeholder="Subject" class="form-control" name="subject" ngModel #subject="ngModel" required>
+            </div>
+            <div *ngIf="subject.invalid && (subject.dirty || subject.touched)" class="alert alert-danger">
+              <div *ngIf="subject.errors.required">
+                 Subject is required.
+              </div>
+            </div>    
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col col-md-12">
+            <div class="form-group">
+                <textarea style="resize:none" placeholder="Message" class="form-control" rows="3" name="message" ngModel #message="ngModel" required></textarea>
+            </div>
+            <div *ngIf="message.invalid && (message.dirty || message.touched)" class="alert alert-danger">
+              <div *ngIf="message.errors.required">
+                Message is required.
+              </div>
+            </div>
+        </div>
+      </div>
         
-
-        <div class="form-group">
-            <label for="name">Subject*</label>
-            <input type="text" class="form-control" name="subject" ngModel #subject="ngModel" required>
+        <div class="row">
+          <div class="col col-md-6"><re-captcha #captchaRef="reCaptcha" (resolved)="resolved($event)" siteKey="6Lc3NTcUAAAAAEbbUbuzavH2Gni0yYJ0Fsvs1HbE" required></re-captcha></div>
+          <div class="col col-md-6"><button type="submit" [disabled]="!recaptchaDone || contactForm.invalid" class="btn btn-success">Send Message</button></div>
         </div>
-        <div *ngIf="subject.invalid && (subject.dirty || subject.touched)" class="alert alert-danger">
-          <div *ngIf="subject.errors.required">
-             Subject is required.
-          </div>
-        </div>
-
-        <div class="form-group">
-            <label for="name">Message*</label>
-            <textarea style="resize:none" class="form-control" rows="3" name="message" ngModel #message="ngModel" required></textarea>
-        </div>
-        <div *ngIf="message.invalid && (message.dirty || message.touched)" class="alert alert-danger">
-          <div *ngIf="message.errors.required">
-            Message is required.
-          </div>
-        </div>
-
-        <re-captcha #captchaRef="reCaptcha" (resolved)="resolved($event)" siteKey="6Lc3NTcUAAAAAEbbUbuzavH2Gni0yYJ0Fsvs1HbE" required></re-captcha>
-    
-        <button type="submit" [disabled]="!recaptchaDone || contactForm.invalid" class="btn btn-success">Send</button>
-    
       </form>
     </div>
-    <div class="gmaps">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.850680794988!2d77.61634731437462!3d12.917316990891514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14fa032a9dbf%3A0x4cc7dfed24ba24f5!2sComplete+Analytics!5e0!3m2!1sen!2sin!4v1509525785955" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div class="address">
+        <div class="addRow card">
+          <div class="addColHeading"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
+          <div class="addColContent">
+            <span><b>+91 9886096090</b></span><br/>
+          </div>
+        </div>
+        <div class="addRow card">
+            <div class="addColHeading"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+            <div class="addColContent">
+              <span><b><a href="mailto:info@completeanalytics.in">info@completeanalytics.in</a></b></span><br/>
+            </div>
+        </div>
+        <div class="addRow card">
+            <div class="addColContent socialIcons">
+                <a href="https://facebook.com"><i style="font-size: 3em" class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a href="https://facebook.com"><i style="font-size: 3em" class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+                <a href="https://facebook.com"><i style="font-size: 3em" class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            </div>
+        </div>
+          
     </div>
   </div>
-  <!-- <div class="address well">
-      <span><b>Complete Analytics Training Institute</b></span>
-      <br/><br/>
-      <span>48/2, 33rd mainroad,</span><br/>
-      <span>IIndCross, Dollars scheme,</span><br/>
-      <span>BTM Layout 1st stage,</span><br/>
-      <span>Bangalore- 560068.</span><br/>
-      <span>Landmark: Near Novel Business Centre.</span><br/><br/>      
-    </div> -->
+  <div class="gmaps">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.850680794988!2d77.61634731437462!3d12.917316990891514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14fa032a9dbf%3A0x4cc7dfed24ba24f5!2sComplete+Analytics!5e0!3m2!1sen!2sin!4v1509525785955" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
   
 </div>

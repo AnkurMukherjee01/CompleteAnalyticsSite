@@ -8,3 +8,17 @@ $color-lightbg: #6ad886;
 $color-darkbg: #012252;
 $color-light: #f4f4f4;
 $color-dark: #222;
+
+@mixin menuHeight {
+    height: 70px;
+    @media (max-width: 500px) {
+        height: 50px;
+    }
+}
+
+@mixin menuMarginTop {
+    margin-top: 70px;
+    @media (max-width: 500px) {
+        margin-top: 50px;
+    }
+}

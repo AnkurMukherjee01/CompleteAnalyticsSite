@@ -37,6 +37,8 @@ import {TabComponent, TabsComponent, OnTabDeselect, OnTabSelect} from './compone
 import { TestimonyTileComponent } from './components/testimony-tile/testimony-tile.component';
 import { CourseSectionComponent } from './components/course-section/course-section.component';
 import { ContactPopupComponent } from './components/contact-popup/contact-popup.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { RecentBatchesComponent } from './recent-batches/recent-batches.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +65,9 @@ import { ContactPopupComponent } from './components/contact-popup/contact-popup.
     TabComponent, TabsComponent,
     TestimonyTileComponent,
     CourseSectionComponent,
-    ContactPopupComponent
+    ContactPopupComponent,
+    FooterComponent,
+    RecentBatchesComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'my-app' }),
@@ -76,6 +80,7 @@ import { ContactPopupComponent } from './components/contact-popup/contact-popup.
       { path: 'corporate-training', component: CorporateTrainingComponent, pathMatch: 'full' },
       { path: 'employer', component: EmployerComponent, pathMatch: 'full' },
       { path: 'become-instructor', component: InstructorComponent, pathMatch: 'full' },
+      { path: 'upcoming-batches', component: RecentBatchesComponent, pathMatch: 'full' },
       { path: '**', redirectTo: 'home' }
     ]),
     HttpModule,

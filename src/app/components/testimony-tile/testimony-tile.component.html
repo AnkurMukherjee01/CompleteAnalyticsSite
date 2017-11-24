@@ -7,8 +7,10 @@
     <star-rating [rating]="data.rating" [maxRating]="5" [maxStars]="5"></star-rating>
   </div>
   <div class="testimonialContent">
-    <span *ngIf="!moreContent">{{data.textContent | slice:0:contentLength }}</span><span *ngIf="data.textContent.length>contentLength && !moreContent"><br/>...</span>
-    <span *ngIf="moreContent">{{data.textContent}}</span>
-    <button class="btn btnMore" *ngIf="data.textContent.length>contentLength" (click)="moreContent = !moreContent">{{moreContent?'Less':'More'}}</button>
+    <div><span>{{data.textContent | slice:0:contentLength }}</span><span *ngIf="data.textContent.length>contentLength">...</span></div>
+    <div class="testimonialFooter">
+      <button class="btn btnMore" *ngIf="data.textContent.length>contentLength" (click)="showMore()">More</button>
+      <i (click)="linkedinBtn()" class="fa fa-linkedin-square" aria-hidden="true"></i>
+    </div>
   </div>
 </div>

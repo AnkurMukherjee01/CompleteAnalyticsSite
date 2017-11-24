@@ -1,0 +1,68 @@
+@import '~scss/variables.scss';
+.recentBatchesPage{
+    background: #ccc;
+    @include menuMarginTop;
+}
+:host{
+    color: $color-dark;
+}
+
+.card{
+    flex-direction: row;
+    margin:2px;
+    border-radius: 5px;
+}
+
+.card-block{
+    display: flex;
+    flex-direction: row;
+}
+.card-block h4{
+    font-size: 1.5em;
+    padding: 3px;
+    width: 20%;
+}
+.card-block h4 i{
+    margin-right: 3px;
+}
+.card-title{
+    width: 40%;
+    font-size: 1.5em;
+    padding: 3px;
+}
+.card-footer{
+    display: flex;
+    flex-direction: column;
+}
+.batchesContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.btn{
+    width: 100%;
+    height: 100%;
+    font-size: 1.3em;
+    margin: 2px;
+}
+.joinBtn{
+    background-color: $color-lightbg;
+    color: $color-dark;
+
+    i{
+        margin-right: 5px;
+    }
+}
+@media (max-width: 768px) {
+    .card-block{
+        flex-direction: column;
+    }
+    .card-block h4{
+        width: 100%;
+    }
+    .card-title{
+        width: 100%;
+    }
+}

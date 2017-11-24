@@ -1,5 +1,13 @@
 <nav class="navbar">
-  <div class="container-fluid">
+  <div class="contactInfo">
+    <div>
+      <i class="fa fa-phone-square" aria-hidden="true"></i><span>91 9886096090</span>
+    </div>
+    <div>
+        <i class="fa fa-envelope" aria-hidden="true"></i><span><a href="mailto:info@completeanalytics.in">info@completeanalytics.in</a></span>
+    </div>
+  </div>
+  <div class="container-fluid myNav">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" (click)="toggleCollapse()">
         <span class="sr-only">Toggle navigation</span>
@@ -19,7 +27,7 @@
       <ul class="nav navbar-nav navbar-left">
         <li><a [routerLink]="['/home']" [routerLinkActive]="['active']" (click)="closeMenu()">Home</a></li>
         <li><a [routerLink]="['/courses']" [routerLinkActive]="['active']" (click)="closeMenu()">Courses</a></li>
-        <li><a [routerLink]="['/about']" [routerLinkActive]="['active']" (click)="closeMenu()">About</a></li>
+        <li><a [routerLink]="['/about']" [routerLinkActive]="['active']" (click)="closeMenu()">About Us</a></li>
         <li><a [routerLink]="['/contact']" [routerLinkActive]="['active']" (click)="closeMenu()">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -31,4 +39,9 @@
     <!--/.nav-collapse -->
   </div>
   <!--/.container-fluid -->
+</nav>
+<nav class="recentBatches">
+  <ul class="nav">
+    <li><a [routerLink]="['/upcoming-batches']"><b>Upcoming Batches</b></a></li>
+  </ul>
 </nav>
