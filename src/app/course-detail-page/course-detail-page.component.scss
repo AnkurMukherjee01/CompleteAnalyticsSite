@@ -11,21 +11,24 @@
         width: 100%;
         background-color: #ccc;
         border-radius: 10px;
-        height: 40px;
+        height: 46px;
     }
     tabs>ul>li{
         margin-bottom: 0px;
+        font-size: 1.3em;
     }
     tabs>ul>li>a{
         border: 0px;
         margin-right: 0px;
+        padding-left: 50px;
+        padding-right: 50px;
         color: $color-dark;
     }
     tabs>ul>li>a>i.glyphicon{
         margin-right: 5px;
     }
     .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
-        background-color: $color-lightbg;
+        background-color: $color-gray;
         color: $color-dark;
         border-radius: 5px;
         border: 0px;
@@ -132,6 +135,7 @@ testimony{
     testimony-tile{
         margin-left: 10px;
         margin-right: 10px;
+        margin-bottom: 30px;
     }
 }
 

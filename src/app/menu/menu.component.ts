@@ -46,5 +46,6 @@ export class MenuComponent implements OnInit {
     if(this.show){
       this.show = !this.show;
     }
+    window.scroll(0, 0);
   }
 }

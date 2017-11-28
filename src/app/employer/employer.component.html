@@ -2,21 +2,21 @@
   <div class="formContainer">
     <div class="pageHeader">
       <h2>Employer</h2>
-      <h4>This is dummy text which will be replaced by actual content</h4>
+      <h4>If you are looking for professionally trained students for data science, please fill the form and we will get back to you</h4>
     </div>  
-      <img src="assets/images/hire_background.jpg"/>
-          <div class="employerForm">
+      <!-- <img src="assets/images/hire_background.jpg"/> -->
+        <div class="employerForm">
           <form #employerForm="ngForm" (ngSubmit)="onSubmit(employerForm)">
             <div class="row">
               <div class="col col-md-12">
                 <div class="form-group">
                   <input type="text" placeholder="Name" class="form-control" name="name" ngModel required #name="ngModel">
                 </div>
-                <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+                <!-- <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
                   <div *ngIf="name.errors.required">
                     Name is required.
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
             
@@ -26,14 +26,14 @@
                 
                 <input type="email" placeholder="Email" class="form-control" name="email" email="true" ngModel #email="ngModel" required>
               </div>
-              <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
+              <!-- <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
                 <div *ngIf="email.errors.required">
                   Email is required.
                 </div>
                 <div *ngIf="email.errors.email">
                   Please enter a valid email.
                 </div>
-              </div>
+              </div> -->
               </div>
               <div class="col col-md-6">
                 <div class="form-group">
@@ -44,13 +44,25 @@
             <div class="row">
               <div class="col col-md-12">
                   <div class="form-group">
-                      <input type="text" placeholder="Subject" class="form-control" name="subject" ngModel #subject="ngModel" required>
+                      <input type="text" placeholder="Number of positions" class="form-control" name="noOfPostions" ngModel #noOfPostions="ngModel">
                   </div>
-                  <div *ngIf="subject.invalid && (subject.dirty || subject.touched)" class="alert alert-danger">
+                  <!-- <div *ngIf="subject.invalid && (subject.dirty || subject.touched)" class="alert alert-danger">
                     <div *ngIf="subject.errors.required">
                       Subject is required.
                     </div>
-                  </div>    
+                  </div>     -->
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-md-12">
+                  <div class="form-group">
+                      <input type="text" placeholder="Subject" class="form-control" name="subject" ngModel #subject="ngModel" required>
+                  </div>
+                  <!-- <div *ngIf="subject.invalid && (subject.dirty || subject.touched)" class="alert alert-danger">
+                    <div *ngIf="subject.errors.required">
+                      Subject is required.
+                    </div>
+                  </div>     -->
               </div>
             </div>
       
@@ -59,16 +71,16 @@
                   <div class="form-group">
                       <textarea style="resize:none" placeholder="Message" class="form-control" rows="3" name="message" ngModel #message="ngModel" required></textarea>
                   </div>
-                  <div *ngIf="message.invalid && (message.dirty || message.touched)" class="alert alert-danger">
+                  <!-- <div *ngIf="message.invalid && (message.dirty || message.touched)" class="alert alert-danger">
                     <div *ngIf="message.errors.required">
                       Message is required.
                     </div>
-                  </div>
+                  </div> -->
               </div>
             </div>
               
               <div class="row">
-                <div class="col col-md-6"><re-captcha #captchaRef="reCaptcha" (resolved)="resolved($event)" siteKey="6Lc3NTcUAAAAAEbbUbuzavH2Gni0yYJ0Fsvs1HbE" required></re-captcha></div>
+                <div class="col col-md-6"><re-captcha #captchaRef="reCaptcha" (resolved)="resolved($event)" siteKey="6LdVXDoUAAAAAFgko3c9x3JzgpSn9j4GGhZiqg7V" required></re-captcha></div>
                 <div class="col col-md-6"><button type="submit" [disabled]="!recaptchaDone || employerForm.invalid" class="btn btn-success">Send Message</button></div>
               </div>
             </form>

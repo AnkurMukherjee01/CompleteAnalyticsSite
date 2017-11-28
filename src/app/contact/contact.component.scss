@@ -58,17 +58,18 @@ input[required].ng-dirty.ng-valid{
     }
 }
 .address{
-    align-self: center;
     flex: 1 1;
     border-radius: 5px;
     width: 100%;
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .addRow{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 10px;
+    height: 73px;
 }
 .addRow:not(.addRow:last-child){
     border-bottom: 1px solid rgba(1,1,1,0.2);
@@ -87,7 +88,7 @@ input[required].ng-dirty.ng-valid{
 }
 
 .address span{
-    font-size: 1.3em;
+    font-size: 1.5em;
     text-align: center;
 }
 
@@ -98,7 +99,7 @@ form button[type="submit"]{
 }
 .pageHeader{
     color: $color-light;
-    padding: 20px;
+    padding: 10px;
 }
 
 @media only screen and (max-width: 768px) {

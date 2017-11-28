@@ -5,7 +5,7 @@
         "duration" : 80,
         "classes": 10,
         "tools" : "R",
-        "img": "assets/images/r_logo.png", 
+        "img": "assets/images/predictive_modelling_logo.png", 
         "learning_mode": "Classroom Training",
         "price" : 22000
     },{
@@ -41,7 +41,7 @@
         "duration" : 40,
         "classes": 10,
         "tools" : "R",
-        "img": "assets/images/r_logo.png",
+        "img": "assets/images/machine_learning_logo.jpg",
         "learning_mode": "Classroom Training",
         "price" : 20000
     },{
@@ -80,7 +80,7 @@
         "duration" : 80,
         "classes": 10,
         "tools" : "R",
-        "img": "assets/images/r_logo.png", 
+        "img": "assets/images/predictive_modelling_logo.png", 
         "learning_mode": "Classroom Training",
         "price" : 22000
     },{

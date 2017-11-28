@@ -54,6 +54,18 @@ app.post('/api/message', (req, res) => {
   messageBody += '\n\n Name: ' + req.body.name;
   messageBody += '\n\n Email: ' + req.body.email;
   messageBody += '\n\n Phone No: ' + req.body.phoneNo;
+  if(req.body.workexp){
+    messageBody += '\n\n Work Experience: ' + req.body.workexp;
+  }
+  if(req.body.noOfPostions){
+    messageBody += '\n\n No Of Positions: ' + req.body.noOfPostions;
+  }
+  if(req.body.company){
+    messageBody += '\n\n Company: ' + req.body.company;
+  }
+  if(req.body.position){
+    messageBody += '\n\n Position: ' + req.body.position;
+  }
   messageBody += '\n\n Subject :' + req.body.subject;
   messageBody += '\n\n Message: ' + req.body.message;
   if(req.body.courseName){

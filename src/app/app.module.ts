@@ -8,6 +8,7 @@ import { RecaptchaFormsModule } from 'ng-recaptcha/forms';
 import { NguCarouselModule } from '@ngu/carousel';
 import { ModalModule } from 'ngx-modialog';
 import { BootstrapModalModule } from 'ngx-modialog/plugins/bootstrap';
+import {NgsRevealModule} from 'ng-scrollreveal';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -39,6 +40,7 @@ import { CourseSectionComponent } from './components/course-section/course-secti
 import { ContactPopupComponent } from './components/contact-popup/contact-popup.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RecentBatchesComponent } from './recent-batches/recent-batches.component';
+import { ReviewPageComponent } from './review-page/review-page.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +69,8 @@ import { RecentBatchesComponent } from './recent-batches/recent-batches.componen
     CourseSectionComponent,
     ContactPopupComponent,
     FooterComponent,
-    RecentBatchesComponent
+    RecentBatchesComponent,
+    ReviewPageComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'my-app' }),
@@ -81,6 +84,7 @@ import { RecentBatchesComponent } from './recent-batches/recent-batches.componen
       { path: 'employer', component: EmployerComponent, pathMatch: 'full' },
       { path: 'become-instructor', component: InstructorComponent, pathMatch: 'full' },
       { path: 'upcoming-batches', component: RecentBatchesComponent, pathMatch: 'full' },
+      { path: 'reviews', component: ReviewPageComponent, pathMatch: 'full' },
       { path: '**', redirectTo: 'home' }
     ]),
     HttpModule,
@@ -90,6 +94,7 @@ import { RecentBatchesComponent } from './recent-batches/recent-batches.componen
     NguCarouselModule,
     ModalModule.forRoot(),
     BootstrapModalModule,
+    NgsRevealModule.forRoot()
   ],
   exports: [RouterModule],
   providers: [CourseServiceService, ContactService, FileDownloadService, UtilService],

@@ -1,17 +1,33 @@
 [{
     "courseId": 1,
-    "date" : "24/11/2017",
-    "time" : "2-5 PM"
+    "date" : "09/12/2017",
+    "time" : "8:45 AM"
 },{
     "courseId": 2,
-    "date" : "2/12/2017",
-    "time" : "2-5 PM"
+    "date" : "16/12/2017",
+    "time" : "8:45 AM"
 },{
     "courseId": 3,
-    "date" : "10/12/2017",
-    "time" : "2-5 PM"
+    "date" : "16/12/2017",
+    "time" : "8:45 AM"
 },{
     "courseId": 4,
-    "date" : "19/12/2017",
-    "time" : "2-5 PM"
+    "date" : "16/12/2017",
+    "time" : "8:45 AM"
+},{
+    "courseId": 5,
+    "date" : "16/12/2017",
+    "time" : "8:45 AM"
+},{
+    "courseId": 6,
+    "date" : "23/12/2017",
+    "time" : "8:45 AM"
+},{
+    "courseId": 7,
+    "date" : "23/12/2017",
+    "time" : "8:45 AM"
+},{
+    "courseId": 8,
+    "date" : "23/12/2017",
+    "time" : "8:45 AM"
 }]

@@ -1,0 +1,21 @@
+@import '~scss/variables.scss';
+
+:host /deep/{
+    .testimonyContainer{
+        height: 100%;
+    }
+}
+.reviewPage{
+    background: #ccc;
+    @include menuMarginTop;
+}
+.reviewWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+testimony-tile{
+    margin: 10px;
+    height: 420px;
+}
