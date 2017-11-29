@@ -1,10 +1,43 @@
 {
     "Course Outline" : [{
-        "heading" : "Introduction to R",
-        "list": ["Introduction to R – History, Windows of  R, Application, Why R?, compared with other software.", "Data Structures in R – Vector, List, Matrix & Data Frame.", "R Workspace", "Packages in R – What is Package, How to install package, How to use?", "Reading, writing a dataset", "First steps with a dataset – head, tail, summary, class, list, ls()", "Working on case study", "Discussion of case study and understand optimal way of writing code."]
+        "heading" : "Introduction to VBA and Macros ",
+        "list": ["The fundamentals of VBA and Macros","The difference between VB and VBA",{"listHeader": "Preparing a workbook for Macros", "sublist": ["Displaying the Developer Tab","Setting the Macro Security level","Saving a file containing Macros"]}]
     },{
-        "heading" : "Data Manipulation in R",
-        "list": ["Adding new columns", "Deleting columns", "Functions", "Indexing" ,"Subsetting Data", "Control Structures", "Merge", "Reshape", "Dplyr package- Select, Filter, mutate, summarize etc.,", "Pipeline function", "Usage of SQLDF package", "Working on case Study"]
+        "heading" : "Recording Macros",
+        "list": ["Recording a Macro","Creating a macro by using Absolute and Relative Reference","The Macros Dialog box","Running a Macro by using Keyboard shortcut and Quick Access toolbar","Creating Objects to Run Macros, Assigning a Macro To An Object"]
+    },{
+        "heading" : "The Excel VBA IDE (Integrated Development Environment) ",
+        "list": ["Launching Microsoft Visual Basic", {"listHeader": "Microsoft Visual Basic interface/ Editor", "sublist": ["Menu bars and Tool bars","The Project Explorer window","Code Window","Object Browser","Properties Window"]},"Running Procedures From The Editor"]
+    },{
+        "heading" : "VBA Fundamentals ",
+        "list": ["VBA: An event driven language","VBA: An object-based language","Procedures: Function and Sub","Code Modules","Basic Data Input and Output – Message Box and Input Box"]
+    },{
+        "heading" : "Excel Objects ",
+        "list": ["Objects Defined","Objects - The Application Object, The Workbook and Window Objects, The Worksheet Object, The Range Object","Collection Objects","Hierarchy of Objects","Objects: Methods and Properties","Using Object References (Selecting column, row, range; setting value)"]
+    },{
+        "heading" : "Variables and Data Types ",
+        "list": ["Declaring and using Variables","Implicit & Explicit Declarations","Variable Types","The Scope of Variables - Procedure Level Scoping, Module Level Scoping, Public Scoping of Variables","Passing Variables By Reference, Passing Variables By Value","Avoiding Variant Data Types","Using Arrays"]
+    },{
+        "heading" : "Programming Techniques ",
+        "list": ["Programming convention","Program structure and syntax","Writing VBA Code","Code indentation","Comments"]
+    },{
+        "heading" : "Procedures and User-Defined Functions ",
+        "list": ["Creating a Procedure","Making Sense Of IntelliSense","Passing Data Between Procedures","Calling Procedures from Other Procedures","Basic data input and output – Message Box and Input Box","Creating a User Defined Function","Passing Arguments to Functions","Calling Functions from Other Procedures","Calling Functions directly in Excel"]
+    },{
+        "heading" : "Events",
+        "list": ["Workbook Events","Worksheet Events"]
+    },{
+        "heading" : "Control Structures &Program Flow ",
+        "list": ["Determining the Flow of a Program","If (ElseIf, Else)","Select Case()","For ... Next Loop, For ... Each Loop","Do … Loop , Do … Until , Do … While","With ... End With","Nesting Code"]
+    },{
+        "heading" : "User Forms ",
+        "list": ["Creating and displaying a user form",{"listHeader": "Form Controls", "sublist": ["Basic controls – Label, Text-Box, Command-Button, List items – List-Box, Combo-Box","Mouse-controlled items – Check-Box, Option-Button(Radio Button), Toggle-Button","Display items – Frame, Tab-Strip, Multi-Page, Scroll-Bar, Spin-Button, Image "]},"Setting Form Properties, setting Form control Properties","Use of form events, procedures and functions","Running and displaying a user form"]
+    },{
+        "heading" : "Programming Custom Forms ",
+        "list": ["Initializing The Form","Closing the Form","Creating Error Checking Procedures, Running a Form From a Procedure"]
+    },{
+        "heading" : "Debugging Code and Error handling",
+        "list": ["Understanding errors","Identifying compile-time, run-time and logical errors in code","Using debugging tools","Setting Break Points In The Editor","Stepping Through a Procedure","Using break mode during run mode","Understanding VBA's error trapping options"]
     }],
     "Case Study": [{
       "heading": "Coming Soon",

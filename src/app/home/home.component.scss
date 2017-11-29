@@ -22,3 +22,18 @@
 .testimonies{
   background: #ccc;  
 }
+.moreBtn{
+  background-color: $color-lightbg;
+  color: $color-dark;
+  font-size: 1.3em;
+
+  span{
+      top: 3px;
+      margin-left: 5px;
+  }
+}
+.moreBtn:hover{
+  transform: scale(1.05);
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+}

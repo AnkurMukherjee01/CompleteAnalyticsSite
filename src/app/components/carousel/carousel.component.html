@@ -3,8 +3,13 @@
   <ngu-item NguCarouselItem *ngFor="let data of carouselData">
     <img class="img" src="{{data.url}}">
     <div class="content">
-      <span class="contentHeader">{{data.contentHeader}}</span>
-      <span class="contentDetail" *ngIf="data.content != ''">{{data.content}}</span>
+      <span class="contentHeader" *ngIf="data.contentHeader != ''">{{data.contentHeader}}</span>
+      <span class="contentDetail" *ngIf="data.content != '' && !isArray(data.content)">{{data.content}}</span>
+      <span class="contentDetail" *ngIf="data.content != '' && isArray(data.content)">
+        <span *ngFor="let q of data.content">
+          {{q}}<br/><br/>
+        </span>
+      </span>
       <button class="btn btn-cta" *ngIf="data.button" (click)="ctaBtnClicked(data.buttonId)">{{data.buttonName}}<span [class]="data.buttonIcon"></span></button>
     </div>
   </ngu-item>
@@ -19,3 +24,4 @@
   </button>
 </ngu-carousel>
 <contact-popup #contactPopup type="Schedule Demo"></contact-popup>
+<contact-popup #projectPopup type="Project"></contact-popup>

@@ -8,6 +8,11 @@
     "buttonIcon" : "glyphicon glyphicon-time"
 },{
     "url": "assets/images/cover2.png",
+    "contentHeader": "",
+    "content": ["“War is ninety percent data and hence DATA ANALYST as #1 warrior”","DATA ANALYST ranked #1 Job","Analytics to become $16 Billion industry by 2025 – NAASCOM","Analytics Industry in India growing at 23.8% CAGR"],
+    "button" : false
+},{
+    "url": "assets/images/cover2.png",
     "contentHeader" : "Become an instructor",
     "content": "Golden opportunity to be part of glowing organisation",
     "button" : true,
@@ -16,8 +21,8 @@
     "buttonIcon" : "glyphicon glyphicon-circle-arrow-right"
 },{
     "url": "assets/images/cover1.png",
-    "contentHeader" : "Looking for project",
-    "content": "Look no further",
+    "contentHeader" : "Have a business problem?",
+    "content": "“We will solve it for you”",
     "button" : true,
     "buttonId": 3,
     "buttonName": "Project",

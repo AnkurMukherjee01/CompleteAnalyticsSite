@@ -24,13 +24,6 @@
     background-size: 100%;
 }
 
-input[required].ng-dirty.ng-invalid{
-    border-left: 10px solid red;
-}
-
-input[required].ng-dirty.ng-valid{
-    border-left: 10px solid green;
-}
 form button[type="submit"]{
     width: 100%;
     height: 62.4px;

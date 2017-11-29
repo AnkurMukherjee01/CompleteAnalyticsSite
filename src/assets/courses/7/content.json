@@ -1,10 +1,37 @@
 {
     "Course Outline" : [{
-        "heading" : "Introduction to R",
-        "list": ["Introduction to R – History, Windows of  R, Application, Why R?, compared with other software.", "Data Structures in R – Vector, List, Matrix & Data Frame.", "R Workspace", "Packages in R – What is Package, How to install package, How to use?", "Reading, writing a dataset", "First steps with a dataset – head, tail, summary, class, list, ls()", "Working on case study", "Discussion of case study and understand optimal way of writing code."]
+        "heading" : "GETTING STARTED WITH EXCEL",
+        "list": ["A overview of the screen, navigation and basic spreadsheet concepts","Understanding workbooks, worksheets, rows, columns, cells","Various selection techniques","Explore the User Interface and the Ribbon","Navigate and Select in Excel","Obtain Help "]
     },{
-        "heading" : "Data Manipulation in R",
-        "list": ["Adding new columns", "Deleting columns", "Functions", "Indexing" ,"Subsetting Data", "Control Structures", "Merge", "Reshape", "Dplyr package- Select, Filter, mutate, summarize etc.,", "Pipeline function", "Usage of SQLDF package", "Working on case Study"]
+        "heading" : "MODIFYING A WORKSHEET",
+        "list": ["Move and Copy Data Between Cells","Fill Cells with Series of Data","Edit Cell Data","Insert and Delete Cells, Columns, and Rows","Go To Cell Data","Inserting, Deleting, Moving and Copying Sheets","Spell Check a Worksheet Transposing data","Importing text and delimiting by space, comma or tab","What does naming a cell range mean?","Rules for naming cells and ranges","Naming cell range(s) in a worksheet","Named ranges within formulas","Navigating through workbooks using named ranges","Creating named ranges automatically based on cell values","Deleting named cells/ranges"]
+    },{
+        "heading" : "CREATING AND EDITING FORMULA ",
+        "list": ["Concept of Formula","Creating Formula, Editing Formula","Bodmas : Mathematical Order :","AutoSum","Copying Formula "]
+    },{
+        "heading" : "CREATING CHARTS ",
+        "list": ["Chart basics","Modifying charts","Change the Chart Type "]
+    },{
+        "heading" : "ADVANCED CHARTS ",
+        "list": [" Gantta Chart","Parota Chart "]
+    },{
+        "heading" : "DATA MANAGEMENT ",
+        "list": ["Organizing Data:","Sorting and Filtering","Data subtotaling"]
+    },{
+        "heading" : "FUNCTIONS",
+        "list": ["Advanced Functions:  Logical function- If Functions, Or & and functions Statistical / Mathematical Functions SUM, SUMIF, SUMIFS, COUNT, COUNTA, COUNTIF, AVERAGE, AVERAGEIF, MIN, MAX","Date/Time Functions  TODAY , NOW ,DATE, WORKDAYS, WEEKNUMBER, EDAY, DATEDIF/ NETWORKDAYS/ EOMONTH Function","Text Functions  MID/ SEARCH/ LEFT/ RIGHT/TRIM/ CLEAN/ UPPER/ LOWER/PROPER","Lookup functions Vlookup Hlookup Index Lookup Match Combination of lookup functions","Creating subtotals","Removing subtotals"]
+    },{
+        "heading" : "ADVANCED DATA ANALYSIS ",
+        "list": ["Pivot tables and Report","Pivot Chart","Goal seak","Solver function","Scenario","Data Analysis","Data validation","Formatting and conditional Formatting "]
+    },{
+        "heading" : "STATISTICAL DATA ANALYSIS",
+        "list": ["Descriptive Statistics","TTEST","ZTEST","Regression","Correlation","ANOVA"]
+    },{
+        "heading" : "HYPERLINKS ",
+        "list": ["Inserting a Hyperlink.","Editing a Hyperlink","Removing a Hyperlink "]
+    },{
+        "heading" : "Macros",
+        "list": ["Creating Macro","Editing Macros "]
     }],
     "Case Study": [{
       "heading": "Coming Soon",

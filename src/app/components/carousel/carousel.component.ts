@@ -11,6 +11,7 @@ import { UtilService } from '../../services/util.service';
 export class CarouselComponent implements OnInit {
 
   @ViewChild('contactPopup') contactPopup: ContactPopupComponent; 
+  @ViewChild('projectPopup') projectPopup: ContactPopupComponent; 
   public carouselData;
   constructor(private utilService: UtilService,private router:Router ) { 
     this.utilService.getCarouselData().subscribe((res) => {
@@ -36,14 +37,21 @@ export class CarouselComponent implements OnInit {
       }
     }
 
+    isArray(data){
+      return Array.isArray(data);
+    }    
+
     ctaBtnClicked(id){
       switch(id){
         case 1:
-          console.log(this.contactPopup);
           this.contactPopup.openPopup();
           break;
         case 2:
           this.router.navigate(['/become-instructor']);
+          break;
+        case 3:
+          this.projectPopup.openPopup();
+          break;
       }
     }
   

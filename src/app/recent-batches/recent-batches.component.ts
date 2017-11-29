@@ -1,3 +1,4 @@
+import { Meta, Title } from '@angular/platform-browser';
 import { CourseServiceService } from './../services/course-service.service';
 import { UtilService } from './../services/util.service';
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -11,13 +12,14 @@ import {Router } from '@angular/router';
 export class RecentBatchesComponent implements OnInit {
 
   @ViewChild('joinPopup') joinPopup;
-  constructor(private utilService: UtilService, private courseService: CourseServiceService,private router: Router) { }
+  constructor(private _title: Title, private _meta: Meta, private utilService: UtilService, private courseService: CourseServiceService,private router: Router) { }
   batches = [];
   batchdata = [];
   courses = [];
   ngOnInit() {
 
-    
+    this._title.setTitle('Upcoming Batches');
+    this._meta.updateTag({ name: 'description', content: 'Upcoming Batches' });
 
     this.utilService.getRecentBatches().subscribe(res => {
       this.batchdata = res;

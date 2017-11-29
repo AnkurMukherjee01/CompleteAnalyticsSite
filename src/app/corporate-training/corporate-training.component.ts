@@ -1,3 +1,4 @@
+import { Meta, Title } from '@angular/platform-browser';
 import { ContactService } from './../services/contact.service';
 import { Component, OnInit, ViewChild } from '@angular/core';
 
@@ -9,10 +10,12 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 export class CorporateTrainingComponent implements OnInit {
 
   recaptchaDone = false;
-  constructor(private contactService: ContactService) { }
+  constructor(private _title: Title, private _meta: Meta, private contactService: ContactService) { }
 
   @ViewChild('captchaRef') recaptcha;
   ngOnInit() {  
+    this._title.setTitle('Corporate Training');
+    this._meta.updateTag({ name: 'description', content: 'Corporate Training Page Description' });
   }
 
   resolved(ev){

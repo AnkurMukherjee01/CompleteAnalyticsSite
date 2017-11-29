@@ -92,6 +92,9 @@ app.post('/api/message', (req, res) => {
     case 'join_course':
       mailSubject = 'Join Course Message';
       break;
+    case 'project':
+      mailSubject = 'Project Message';
+      break;
     default:
       mailSubject = 'Message from Website';
   }

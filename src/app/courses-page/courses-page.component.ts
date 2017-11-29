@@ -1,3 +1,4 @@
+import { Title, Meta } from '@angular/platform-browser';
 import { CourseServiceService } from './../services/course-service.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -9,9 +10,11 @@ import { Component, OnInit } from '@angular/core';
 export class CoursesPageComponent implements OnInit {
 
   public allCourses;
-  constructor(private courseService: CourseServiceService) { }
+  constructor(private _title: Title, private _meta: Meta, private courseService: CourseServiceService) { }
 
   ngOnInit() {
+    this._title.setTitle('Courses');
+    this._meta.updateTag({ name: 'description', content: 'Courses Page' });
     this.courseService.getAllCourses().subscribe(res => {
       this.allCourses = res.courses;
     });

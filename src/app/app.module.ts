@@ -75,7 +75,7 @@ import { ReviewPageComponent } from './review-page/review-page.component';
   imports: [
     BrowserModule.withServerTransition({ appId: 'my-app' }),
     RouterModule.forRoot([
-      { path: 'home', component: HomeComponent, pathMatch: 'full' },
+      { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'courses', component: CoursesPageComponent, pathMatch: 'full' },
       { path: 'courses/:name', component: CourseDetailPageComponent, pathMatch: 'full' },
       { path: 'contact', component: ContactComponent, pathMatch: 'full'},
@@ -85,7 +85,7 @@ import { ReviewPageComponent } from './review-page/review-page.component';
       { path: 'become-instructor', component: InstructorComponent, pathMatch: 'full' },
       { path: 'upcoming-batches', component: RecentBatchesComponent, pathMatch: 'full' },
       { path: 'reviews', component: ReviewPageComponent, pathMatch: 'full' },
-      { path: '**', redirectTo: 'home' }
+      { path: '**', redirectTo: '' }
     ]),
     HttpModule,
     FormsModule,

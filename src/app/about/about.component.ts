@@ -11,7 +11,7 @@ export class AboutComponent implements OnInit {
   constructor(private _title: Title, private _meta: Meta) { }
 
   ngOnInit() {
-    this._title.setTitle('About Page');
+    this._title.setTitle('About Us');
     this._meta.updateTag({ name: 'description', content: 'About Page Description' });
   }
 }

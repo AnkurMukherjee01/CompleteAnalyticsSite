@@ -17,13 +17,13 @@
     align-items: center;
     text-align: center;
     font-size: 1.2em;
+    border-radius: 35%;
 }
 .card:hover{
-    transform: scale(1.05);
+    border-radius: 0%;
     transition-duration: 0.1s;
     transition-timing-function: ease-in-out;
     z-index: 5;
-    background-color: $color-lightbg;
 }
 .card img{
     width: 100px;

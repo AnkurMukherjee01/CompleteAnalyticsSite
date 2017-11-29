@@ -3,6 +3,17 @@
     font-family: open-sans;
     font-weight: bold;
 
+    
+    input[required].ng-dirty.ng-invalid, textarea[required].ng-dirty.ng-invalid{
+        border-left: 10px solid red;
+    }
+
+    input[required].ng-dirty.ng-valid, textarea[required].ng-dirty.ng-valid{
+        border-left: 10px solid green;
+    }
+    input.ng-dirty.ng-valid{
+        border-left: 10px solid green;
+    }
     .btn-cta{
         background-color: $color-lightbg;
         color: $color-dark;

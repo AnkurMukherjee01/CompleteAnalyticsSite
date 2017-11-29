@@ -1,3 +1,4 @@
+import { Meta, Title } from '@angular/platform-browser';
 import { ContactService } from './../services/contact.service';
 import { UtilService } from './../services/util.service';
 import { FileDownloadService } from './../services/file-download.service';
@@ -23,9 +24,11 @@ export class CourseDetailPageComponent implements OnInit {
 
   @ViewChild('downloadPopup') downloadPopup;
   @ViewChild('joinPopup') joinPopup;
-  constructor(private route: ActivatedRoute, private courseSevice: CourseServiceService, private fileDownload: FileDownloadService, private utilService: UtilService,public modal: Modal, private contactService: ContactService) {   }
+  constructor(private _title: Title, private _meta: Meta, private route: ActivatedRoute, private courseSevice: CourseServiceService, private fileDownload: FileDownloadService, private utilService: UtilService,public modal: Modal, private contactService: ContactService) {   }
   
   ngOnInit() {
+    this._title.setTitle('Course Details');
+    this._meta.updateTag({ name: 'description', content: 'Course Details' });
     
     this.route.params.forEach((params: Params) => {
       let name = params['name'];

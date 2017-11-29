@@ -5,60 +5,35 @@
             <button class="btn btn-primary" (click)="dialogRef.close(true)"><i class="glyphicon glyphicon-remove"></i></button>
         </div>
         <div class="modal-body">
-            <div class="employeeForm">
-                <form #employeeForm="ngForm" (ngSubmit)="onSubmit(employeeForm)">
+            <div class="contactForm">
+                <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
                     <div class="form-group">
-                      <label for="name">Name*</label>
-                      <input type="text" class="form-control" name="name" ngModel required #name="ngModel">
-                    </div>
-                    <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
-                      <div *ngIf="name.errors.required">
-                        Name is required.
-                      </div>
+                      <input type="text" placeholder="Name" class="form-control" name="name" ngModel required #name="ngModel">
                     </div>
                 
-                    <div class="form-group">
-                      <label for="email">Email*</label>
-                      <input type="email" class="form-control" name="email" email="true" ngModel #email="ngModel" required>
-                    </div>
-                    <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
-                      <div *ngIf="email.errors.required">
-                        Email is required.
+                    <div class="row">
+                      <div class="col col-md-6">
+                          <div class="form-group">
+                            <input type="email" placeholder="Email" class="form-control" name="email" email="true" ngModel #email="ngModel" required>
+                          </div>
                       </div>
-                      <div *ngIf="email.errors.email">
-                        Please enter a valid email.
+                      <div class="col col-md-6">
+                        <div class="form-group">
+                            <input type="text" placeholder="Phone No" class="form-control" name="phoneNo" ngModel>
+                        </div>
                       </div>
                     </div>
             
                     <div class="form-group">
-                        <label for="name">Phone No</label>
-                        <input type="text" class="form-control" name="phoneNo" ngModel>
+                        <input type="text" placeholder="Subject" class="form-control" name="subject" ngModel #subject="ngModel" required>
                     </div>
                     
-            
                     <div class="form-group">
-                        <label for="name">Subject*</label>
-                        <input type="text" class="form-control" name="subject" ngModel #subject="ngModel" required>
+                        <textarea style="resize:none" placeholder="Message" class="form-control" rows="3" name="message" ngModel #message="ngModel" required></textarea>
                     </div>
-                    <div *ngIf="subject.invalid && (subject.dirty || subject.touched)" class="alert alert-danger">
-                      <div *ngIf="subject.errors.required">
-                         Subject is required.
-                      </div>
-                    </div>
-            
-                    <div class="form-group">
-                        <label for="name">Message*</label>
-                        <textarea style="resize:none" class="form-control" rows="3" name="message" ngModel #message="ngModel" required></textarea>
-                    </div>
-                    <div *ngIf="message.invalid && (message.dirty || message.touched)" class="alert alert-danger">
-                      <div *ngIf="message.errors.required">
-                        Message is required.
-                      </div>
-                    </div>
-            
+                    
                     <re-captcha style="width:100%" #captchaRef="reCaptcha" (resolved)="resolved($event)" siteKey="6LdVXDoUAAAAAFgko3c9x3JzgpSn9j4GGhZiqg7V" required></re-captcha>
-                
-                    <button type="submit" [disabled]="!recaptchaDone || employeeForm.invalid" class="btn btn-success">Send</button>
+                    <button type="submit" [disabled]="!recaptchaDone || contactForm.invalid" class="btn btn-success">Send</button>
                 
                 </form>
               </div>

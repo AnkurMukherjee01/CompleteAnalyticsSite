@@ -1,0 +1,10 @@
+input[required].ng-dirty.ng-invalid, textarea[required].ng-dirty.ng-invalid{
+    border-left: 10px solid red;
+}
+
+input[required].ng-dirty.ng-valid, textarea[required].ng-dirty.ng-valid{
+    border-left: 10px solid green;
+}
+input.ng-dirty.ng-valid{
+    border-left: 10px solid green;
+}

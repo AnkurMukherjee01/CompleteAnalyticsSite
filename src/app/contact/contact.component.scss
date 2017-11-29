@@ -31,14 +31,6 @@
     font-size: 2em;
 }
 
-
-input[required].ng-dirty.ng-invalid{
-    border-left: 5px solid red;
-}
-
-input[required].ng-dirty.ng-valid{
-    border-left: 5px solid green;
-}
 .contactForm{
     flex: 1 1;
 }

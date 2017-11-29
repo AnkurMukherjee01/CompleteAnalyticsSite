@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { UtilService } from './../services/util.service';
 import { CourseServiceService } from './../services/course-service.service';
 import { Component, OnInit } from '@angular/core';
@@ -16,7 +17,8 @@ export class HomeComponent implements OnInit {
   constructor(
     private _title: Title,
     private _meta: Meta,
-    private courseService: CourseServiceService) {
+    private courseService: CourseServiceService,
+    private router: Router) {
 
       this.courseService.getAllCourses().subscribe((res) => {
         this.courses = res.courses;
@@ -27,6 +29,10 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this._title.setTitle('Home Page');
     this._meta.updateTag({ name: 'description', content: 'Home Page Description' });
+  }
+
+  viewMoreCourses(){
+    this.router.navigate(['courses']);
   }
 
 }
