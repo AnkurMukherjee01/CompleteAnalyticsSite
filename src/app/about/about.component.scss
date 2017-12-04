@@ -2,16 +2,25 @@
 
 .aboutusContainer{
   @include menuMarginTop;
-  display: flex;
-  flex-direction: row;
   color: $color-light;
-  background-image: url('../../assets/images/aboutus.jpg');
-  background-size: 100% 100%;
+  background-color: darkslategrey;
+  padding-bottom: 40px;
+}
+.topHeader{
+  height: 400px;
+  background-image: url('../../assets/images/about_us2.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 .header{
   font-size: 2em;
   width: 85%;
   padding: 10px;
+}
+.headerContainer{
+  padding: 20px;
 }
 .rightContent{
   min-width: 30%;

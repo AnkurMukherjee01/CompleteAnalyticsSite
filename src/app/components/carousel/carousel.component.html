@@ -6,7 +6,7 @@
       <span class="contentHeader" *ngIf="data.contentHeader != ''">{{data.contentHeader}}</span>
       <span class="contentDetail" *ngIf="data.content != '' && !isArray(data.content)">{{data.content}}</span>
       <span class="contentDetail" *ngIf="data.content != '' && isArray(data.content)">
-        <span *ngFor="let q of data.content">
+        <span class="quotes" *ngFor="let q of data.content">
           {{q}}<br/><br/>
         </span>
       </span>

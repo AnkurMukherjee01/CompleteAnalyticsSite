@@ -14,10 +14,25 @@
         height: 100%;
     }
 }
+.wrapper{
+    background-image: url('../../../assets/images/testimonials.jpg');
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+.contentHeader{
+    color: $color-light;
+}
+ngu-carousel{
+    padding-left: 30px;
+    padding-right: 30px;
+}
 
 .leftRs .glyphicon, .rightRs .glyphicon{
     font-size: 2em;
-    color: $color-dark;
+    color: $color-light;
 }
 .leftRs {
     position: absolute;

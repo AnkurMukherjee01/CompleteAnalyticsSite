@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'course-section',
@@ -9,8 +9,11 @@ export class CourseSectionComponent implements OnInit {
 
   @Input() sectionHeader;
   @Input() sectionContent;
+  @Output() sectionChanged;
   open = false;
-  constructor() { }
+  constructor() {
+    this.sectionChanged = new EventEmitter<any>();
+   }
 
   ngOnInit() {
   }
@@ -21,6 +24,7 @@ export class CourseSectionComponent implements OnInit {
 
   toggleSection(){
     this.open = !this.open;
+    this.sectionChanged.emit();
   }
 
 }

@@ -5,11 +5,11 @@ import { environment } from '../../environments/environment';
 @Injectable()
 export class ContactService {
 
-  baseUrl = environment.basePath;
+  //baseUrl = environment.basePath;
   constructor(private http: Http) { }
 
   postMessageData(data){
-    return this.http.post(this.baseUrl + 'api/message/', data);
+    return this.http.post('/api/message/', data);
   }
 
 }

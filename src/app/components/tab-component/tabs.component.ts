@@ -5,13 +5,14 @@ import { TabComponent } from './tab.component';
 @Component({
     selector: 'tabs',
     template: `
+    <button style="width: 100%" *ngIf="showDownload" class="btn btn-download" (click)="downloadClick()"><span>Download</span><i class="glyphicon glyphicon-download"></i></button>
         <ul class="nav nav-tabs">
+            <li *ngIf="!showDownload" style="float: right"><button class="btn btn-download" (click)="downloadClick()"><span>Download</span><i class="glyphicon glyphicon-download"></i></button></li>    
             <li *ngFor="let tab of tabs" [class.active]="tab.active" [class.disabled]="tab.disabled">
             <a role="tab" [href]="tab.href" (click)="selectTab(tab, $event)">
             <i *ngIf="tab.tabIcon" class="glyphicon glyphicon-{{tab.tabIcon}}"></i>{{tab.tabTitle}}
             </a>
             </li>
-            <li style="float: right"><button class="btn btn-download" (click)="downloadClick()"><span>Download</span><i class="glyphicon glyphicon-download"></i></button></li>
         </ul>
         <ng-content></ng-content>
     `
@@ -22,6 +23,8 @@ export class TabsComponent implements AfterContentInit {
     @Output() tabChangeEmitter = new EventEmitter<number>();
 
     @Output() downloadEvent = new EventEmitter<any>();
+
+    showDownload = false;
     // contentChildren are set
     ngAfterContentInit() {
         // get all active tabs
@@ -31,6 +34,8 @@ export class TabsComponent implements AfterContentInit {
         if (activeTabs.length === 0) {
             this.selectTab(this.tabs.first);
         }
+
+        window.innerWidth <= 425 ? this.showDownload = true: this.showDownload = false;
     }
 
     findTabIndexById(id: any): number {

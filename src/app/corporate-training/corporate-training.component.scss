@@ -11,6 +11,7 @@
     flex: 1 1;
     padding : 20px;
     font-size : 1.5em;
+    height: 100vh;
 }
 .corporateTrainingPage{
     @include menuMarginTop;
@@ -21,7 +22,7 @@
     display: flex;
     flex-direction: row;
     background-image: url('../../assets/images/corporateTraining.jpg');
-    background-size: 100%;
+    background-size: cover;
 }
 
 form button[type="submit"]{
@@ -34,6 +35,7 @@ form button[type="submit"]{
     border-radius: 5px;
     background-color: darkslategrey;
     flex : 1 1;
+    height: fit-content;
     box-shadow: 5px 4px 10px rgba($color: #000000, $alpha: 0.6)
 }
 
