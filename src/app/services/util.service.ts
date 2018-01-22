@@ -9,23 +9,27 @@ export class UtilService {
   constructor(private http: Http) { }
 
   getCarouselData(): Observable<any>{
-    return this.http.get('/assets/carousel.json')
+    var url = this.basePath + '/assets/carousel.json';
+    return this.http.get(url)
       .map((res) => res.json())
   }
 
   getCompaniesURL(): Observable<any>{
-    return this.http.get('/assets/companiesLogo.json')
+    var url = this.basePath + '/assets/companiesLogo.json';
+    return this.http.get(url)
       .map((res) => res.json())
   }
 
   getTestimoniesData(section): Observable<any>{
-    return this.http.get('/assets/testimonies.json')
+    var url = this.basePath + '/assets/testimonies.json';
+    return this.http.get(url)
       .map((res) => res.json())
       .map((res) => res[section])
   }
 
   getTestimoniesCoursesData(section, id): Observable<any>{
-    return this.http.get('/assets/testimonies.json')
+    var url = this.basePath + '/assets/testimonies.json';
+    return this.http.get(url)
       .map((res) => res.json())
       .map((res) => res[section])
       .map(memberArray => {
@@ -36,7 +40,8 @@ export class UtilService {
   }
 
   getRecentBatches(){
-    return this.http.get('/assets/upcomingBatches.json')
+    var url = this.basePath + '/assets/upcomingBatches.json';
+    return this.http.get(url)
       .map((res) => res.json())
   }
 

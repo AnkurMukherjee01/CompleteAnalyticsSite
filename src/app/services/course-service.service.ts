@@ -12,7 +12,8 @@ export class CourseServiceService {
   constructor(private http: Http) { }
 
   getAllCourses() : Observable<any>{
-    return this.http.get('/assets/courses.json')
+    var url = this.basePath + '/assets/courses.json';
+    return this.http.get(url)
       .map((res) => res.json())
   }
 
@@ -21,7 +22,8 @@ export class CourseServiceService {
   }
 
   getCourse(name): Observable<any>{
-    return this.http.get('/assets/courses.json')
+    var url = this.basePath + '/assets/courses.json';
+    return this.http.get(url)
       .map((res) => res.json())
       .map((data) => data.courses)
       .map(memberArray => {
@@ -31,7 +33,8 @@ export class CourseServiceService {
   }
 
   getCourseDetails(id, content): Observable<any>{
-    return this.http.get('/assets/courses/' + id + '/content.json')
+    var url = this.basePath + '/assets/courses/' + id + '/content.json';
+    return this.http.get(url)
       .map((res) => res.json())
       .map((data) => data[content])
   }
