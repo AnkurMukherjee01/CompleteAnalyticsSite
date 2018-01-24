@@ -110,9 +110,13 @@ app.post('/api/message', (req, res) => {
         accessToken: config.accessToken,
         expires: 3600
     }
+  }, (err, info) => {
+    if(err){
+      return res.sendStatus(400);
+    }else{
+        return res.sendStatus(200);
+    }
   });
-
-  return res.sendStatus(200);
 });
 
 app.get('*.*', express.static(join(DIST_FOLDER, 'browser')));
