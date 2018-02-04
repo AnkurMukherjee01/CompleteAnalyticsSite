@@ -5,7 +5,7 @@
           <img src="assets/images/courses_bg.jpg" width="100%" height="400">
           <div *ngIf="course" class="imgContent">
             <span class="contentHeader">{{course.name}}</span>
-            <span class="contentDetail"><h3 class="price"><b>Price: {{course.price | currency:'INR':true:'4.0-0'}}</b></h3></span>
+            <span class="contentDetail"><h3 class="price"><b>Price: {{course.price | currency:'INR':true:'4.0-0'}}</b> <span style="font-size: 14px">+ service tax</span></h3></span>
           </div> 
         </div>
       
@@ -44,8 +44,9 @@
           <tr><td>Learning Mode</td><td>{{course.learning_mode}}</td></tr>
 
         </table>
-        <br/><br/>
+        <br/>
         <button (click)="joinButton()" class="btn btn-join">Join</button>
+        
       </div>
     </div>
   </div>

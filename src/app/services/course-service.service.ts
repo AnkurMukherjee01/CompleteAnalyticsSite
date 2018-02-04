@@ -8,11 +8,10 @@ import { environment } from '../../environments/environment';
 @Injectable()
 export class CourseServiceService {
   
-  basePath = environment.basePath;
   constructor(private http: Http) { }
 
   getAllCourses() : Observable<any>{
-    var url = this.basePath + 'assets/courses.json';
+    var url =  'assets/courses.json';
     return this.http.get(url)
       .map((res) => res.json())
   }
@@ -22,7 +21,7 @@ export class CourseServiceService {
   }
 
   getCourse(name): Observable<any>{
-    var url = this.basePath + 'assets/courses.json';
+    var url = 'assets/courses.json';
     return this.http.get(url)
       .map((res) => res.json())
       .map((data) => data.courses)
@@ -33,7 +32,7 @@ export class CourseServiceService {
   }
 
   getCourseDetails(id, content): Observable<any>{
-    var url = this.basePath + 'assets/courses/' + id + '/content.json';
+    var url = 'assets/courses/' + id + '/content.json';
     return this.http.get(url)
       .map((res) => res.json())
       .map((data) => data[content])

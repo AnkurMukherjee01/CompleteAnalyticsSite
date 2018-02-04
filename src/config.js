@@ -1,7 +1,8 @@
 module.exports = {
-    mailUser: 'completeanalytics@gmail.com',
-    clientId: '117242968434-rks42a00n1buek1cgoof3ggpmtagt87d.apps.googleusercontent.com',
-    clientSecret: 'DAQAtg_2ckffEKaf-4p_1Pef',
-    refreshToken : '1/u9f93x3thXRzul5w3_-SSkqCWvrX2VqemcHkUwLvvFg',
-    accessToken: 'ya29.GltMBQPk50Bbrzxgabcyc4jj57rPk_XjjIwWmH0ZbIMGgzMfIUS9i8bzqXw3RwBrH8EyKOq3u1xss-COa22GdsN8CwyOiLCNuPYZJMrL3MvNkZha7OJwEv-zhW1q'
+    mailUser: 'contact.completeanalytics@gmail.com',
+    sendMailTo : 'completeanalytics@gmail.com',
+    clientId: '50792133589-v8r85fko07v2el8op045eh6o3hr6k7s6.apps.googleusercontent.com',
+    clientSecret: 'XwVqXWMA1M4ZLtQN1YaGC03p',
+    refreshToken : '1/CK8KWjejkbAEMEPanruuzZyIIOiwY9DSleN10E3NLmaHicoO8otJiqpIsj-u6tQi',
+    accessToken: 'ya29.GltXBQn37E9MG9PQYnUC1gy6Ns9jpGz5ZRVP2mR9qq36ZZh95dyWDaVqznAQafKNV7fvy-tmaz8LhMdrgtdRIqNdT39g4THLgOj02yIFBk2qL4pSoMshjFKJLtY7'
 }

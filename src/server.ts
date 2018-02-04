@@ -101,7 +101,7 @@ app.post('/api/message', (req, res) => {
 
   transporter.sendMail({
     from: config.mailUser,
-    to: config.mailUser,
+    to: config.sendMailTo,
     subject: mailSubject,
     text: messageBody,
     auth: {
